@@ -130,7 +130,7 @@ public class WebScoketController : MonoBehaviour
         {
             result_num=result_num+1;
 			// PowerupController.instance.SetGolds(1);
-			TrackGenerator.instance.SetGold(GlodType.Yellow, 30, UnityEngine.Random.Range(0f, 100f));
+			TrackGenerator.instance.SetGold(GlodType.Yellow, 45, UnityEngine.Random.Range(0f, 100f));
 		}
 
         if (msg == "02")
@@ -138,7 +138,7 @@ public class WebScoketController : MonoBehaviour
         {
             result_num=result_num+1;
 			// PowerupController.instance.SetGolds(1);
-			TrackGenerator.instance.SetGold(GlodType.Blue, 30, UnityEngine.Random.Range(0f, 100f));
+			TrackGenerator.instance.SetGold(GlodType.Blue, 45, UnityEngine.Random.Range(0f, 100f));
 		}
 
         if (msg == "03")
@@ -146,7 +146,7 @@ public class WebScoketController : MonoBehaviour
         {
             result_num=result_num+1;
 			//powerupController.instance.SetGolds(1);
-			TrackGenerator.instance.SetGold(GlodType.Red, 30, UnityEngine.Random.Range(0f, 100f));
+			TrackGenerator.instance.SetGold(GlodType.Red, 45, UnityEngine.Random.Range(0f, 100f));
 		}
 
        if (msg == "07")
@@ -157,26 +157,26 @@ public class WebScoketController : MonoBehaviour
         
         else if(msg == "11") {
            // Controller.instance.currentLevelSpeed=30;
-            speedtemp= 30;
-            GlobalConstants.speed_tar=30;
-            GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
-            GlobalConstants.speed_rc=GlobalConstants.speed_tar;
-            GlobalConstants.clock=0;
-        }
-
-        else if(msg == "12") {
-            speedtemp= 35;
-            //Controller.instance.currentLevelSpeed=32;
+            speedtemp=35;
             GlobalConstants.speed_tar=35;
             GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
             GlobalConstants.speed_rc=GlobalConstants.speed_tar;
             GlobalConstants.clock=0;
         }
 
-       else if(msg == "13") {
-           speedtemp= 40;
-            //Controller.instance.currentLevelSpeed=34;
+        else if(msg == "12") {
+            speedtemp= 40;
+            //Controller.instance.currentLevelSpeed=32;
             GlobalConstants.speed_tar=40;
+            GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
+            GlobalConstants.speed_rc=GlobalConstants.speed_tar;
+            GlobalConstants.clock=0;
+        }
+
+       else if(msg == "13") {
+           speedtemp= 45;
+            //Controller.instance.currentLevelSpeed=34;
+            GlobalConstants.speed_tar=45;
             GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
             GlobalConstants.speed_rc=GlobalConstants.speed_tar;
             GlobalConstants.clock=0;
@@ -184,8 +184,8 @@ public class WebScoketController : MonoBehaviour
 
        else if(msg == "14") {
            // Controller.instance.currentLevelSpeed=36;
-            speedtemp = 45;
-            GlobalConstants.speed_tar=45;
+            speedtemp = 50;
+            GlobalConstants.speed_tar=50;
             GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
             GlobalConstants.speed_rc=GlobalConstants.speed_tar;
             GlobalConstants.clock=0;
@@ -193,8 +193,8 @@ public class WebScoketController : MonoBehaviour
 
        else if(msg == "15") {
            // Controller.instance.currentLevelSpeed=38;
-           speedtemp = 50;
-            GlobalConstants.speed_tar=50;
+           speedtemp = 55;
+            GlobalConstants.speed_tar=55;
             GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
             GlobalConstants.speed_rc=GlobalConstants.speed_tar;
             GlobalConstants.clock=0;
@@ -202,8 +202,8 @@ public class WebScoketController : MonoBehaviour
 
        else if(msg == "16") {
             //Controller.instance.currentLevelSpeed=40;
-            speedtemp = 55;
-            GlobalConstants.speed_tar=55;
+            speedtemp = 60;
+            GlobalConstants.speed_tar=60;
             GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
             GlobalConstants.speed_rc=GlobalConstants.speed_tar;
             GlobalConstants.clock=0;
@@ -211,8 +211,8 @@ public class WebScoketController : MonoBehaviour
 
        else if(msg == "17") {
            // Controller.instance.currentLevelSpeed=44;
-           speedtemp = 60;
-            GlobalConstants.speed_tar=60;
+           speedtemp = 65;
+            GlobalConstants.speed_tar=65;
             GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
             GlobalConstants.speed_rc=GlobalConstants.speed_tar;
             GlobalConstants.clock=0;
@@ -220,8 +220,8 @@ public class WebScoketController : MonoBehaviour
 
        else if(msg == "18") {
            // Controller.instance.currentLevelSpeed=46;
-           speedtemp =65;
-            GlobalConstants.speed_tar=65;
+           speedtemp =70;
+            GlobalConstants.speed_tar=70;
             GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
             GlobalConstants.speed_rc=GlobalConstants.speed_tar;
             GlobalConstants.clock=0;
@@ -229,20 +229,30 @@ public class WebScoketController : MonoBehaviour
 
        else if(msg == "19") {
            // Controller.instance.currentLevelSpeed=48;
-           speedtemp = 70;
-            GlobalConstants.speed_tar=70;
+           speedtemp = 75;
+            GlobalConstants.speed_tar=75;
             GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
             GlobalConstants.speed_rc=GlobalConstants.speed_tar;
             GlobalConstants.clock=0;
         }
 
         else if(msg == "20") {
-            speedtemp = 75;
+            speedtemp = 80;
            // Controller.instance.currentLevelSpeed=50;
-            GlobalConstants.speed_tar=75;
+            GlobalConstants.speed_tar=80;
             GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
             GlobalConstants.speed_rc=GlobalConstants.speed_tar;
             GlobalConstants.clock=0;
+        }
+
+        else if (msg == "10")
+        {
+            #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+            #else
+            Application.Quit();
+            #endif
+            //MovingObstacle.instance.handlePauseAll(true);
         }
         // tweener.Kill();
         // tweener = DOTween.To(() => Controller.instance.currentLevelSpeed, x => Controller.instance.currentLevelSpeed = x, speedtemp, 0.4f).SetEase(Ease.Linear);
@@ -262,8 +272,8 @@ public class WebScoketController : MonoBehaviour
         if (Controller.instance.currentLevelSpeed<GlobalConstants.speed_tar){ 
            Controller.instance.currentLevelSpeed=Controller.instance.currentLevelSpeed+ GlobalConstants.speed_a*GlobalConstants.speed_t/3;
           if(Controller.instance.currentLevelSpeed>=GlobalConstants.speed_tar){
-               if(Controller.instance.currentLevelSpeed>=65){
-                   Controller.instance.currentLevelSpeed=65;
+               if(Controller.instance.currentLevelSpeed>=80){
+                   Controller.instance.currentLevelSpeed=80;
                }
                GlobalConstants.clock_num+=GlobalConstants.clock_num;
               // return;
@@ -273,8 +283,8 @@ public class WebScoketController : MonoBehaviour
       else if (Controller.instance.currentLevelSpeed>GlobalConstants.speed_tar){ 
           Controller.instance.currentLevelSpeed=Controller.instance.currentLevelSpeed-GlobalConstants.speed_a*GlobalConstants.speed_t/3;
           if(Controller.instance.currentLevelSpeed<=GlobalConstants.speed_tar){
-               if(Controller.instance.currentLevelSpeed<=20){
-                   Controller.instance.currentLevelSpeed=20;
+               if(Controller.instance.currentLevelSpeed<=35){
+                   Controller.instance.currentLevelSpeed=35;
                }
                GlobalConstants.clock_num+=GlobalConstants.clock_num;
                //return;

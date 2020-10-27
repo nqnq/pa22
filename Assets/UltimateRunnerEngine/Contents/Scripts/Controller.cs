@@ -749,13 +749,13 @@ public class Controller : MonoBehaviour {
     // SPEED ---------------------------------------------------------------------------------------------
     public class Acceleration
     {
-        public float start = 20;
-        public float end = 65;
+        public float start = 35;
+        public float end = 80;
         public float accelerationTime = 200;
     }
 
     // 速度
-    public float currentLevelSpeed=20;
+    public float currentLevelSpeed=35;
 
     public Acceleration speed = new Acceleration();
 
@@ -1399,10 +1399,10 @@ public class Controller : MonoBehaviour {
 
             }
         }
-   
-
-   
-
+           
+         
+         
+         
         //globals.crashedObstacle = crashedObstacle;
        
        
@@ -1493,6 +1493,7 @@ public class Controller : MonoBehaviour {
             }
         }
 
+
         if (effetcObject != null)
         {
            GameObject createdEffetc =  (GameObject)GameObject.Instantiate(effetcObject, effetcPos,Quaternion.identity);
@@ -1524,8 +1525,8 @@ public class Controller : MonoBehaviour {
                        break;
                }
 
-              GameGlobals.Instance.audioController.playSoundPitched("UIQuestion", pitch);
-              GameGlobals.Instance.achievements.increaseScore(selectedPoint);
+               GameGlobals.Instance.audioController.playSoundPitched("UIQuestion", pitch);
+               GameGlobals.Instance.achievements.increaseScore(selectedPoint);
 
                Transform pointsRoot = createdEffetc.transform.Find("pointsGroup");
                if (pointsRoot != null)
@@ -1551,6 +1552,8 @@ public class Controller : MonoBehaviour {
         }
 
     }
+
+
 
     public void doAnCameraEffect()
     {

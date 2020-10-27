@@ -11,11 +11,11 @@ public class MovingObstacle : MonoBehaviour
     public enum movingObstacleTypes
     {
         Trail = 0,
-        Single = 1
+        Single =1
 
     }
 
-
+    //public static MovingObstacle instance;
     private TrackObject trackObject;
     public float speed = 1f;
     public bool lockSpeed;
@@ -249,7 +249,7 @@ public class MovingObstacle : MonoBehaviour
         }
     }
 
-    public static void handlePauseAll(bool isPaused)
+    public  static void handlePauseAll(bool isPaused)
     {
 
         foreach (MovingObstacle activeTrain in MovingObstacle.activeMovingObstacles)
