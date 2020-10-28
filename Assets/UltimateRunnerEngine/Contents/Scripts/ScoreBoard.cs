@@ -11,7 +11,6 @@ public class ScoreBoard : MonoBehaviour {
     private GameObject scoreRoot;
     private GameObject letterRoot;
 
-
     void Awake()
     {
 
@@ -42,10 +41,7 @@ public class ScoreBoard : MonoBehaviour {
     {
 
         string scoreText = "SCORE"; // SCORE
-
- 
         float curX = 0;
-
 
         for (int i = 0; i < scoreText.ToString().Length; i++)
         {
@@ -77,8 +73,8 @@ public class ScoreBoard : MonoBehaviour {
 
         }
 
-
     }
+
 
     public void RefreshScore()
     {
@@ -87,7 +83,6 @@ public class ScoreBoard : MonoBehaviour {
         {
             Destroy(number.gameObject);
         }
-
 
        int totalScore = PlayerPrefs.GetInt("totalScore", 0);
        float curX = 0;
@@ -107,8 +102,6 @@ public class ScoreBoard : MonoBehaviour {
 
                curX -= 0.25f;
            }
-
-
        }
 
     }

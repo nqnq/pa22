@@ -60,7 +60,7 @@ public class GameGlobals : MonoBehaviour {
     public GameState resumeGameState;
     public GameState villainCheerState;
     public GameState highScoreState;
-
+ 
     // Auto starts game when player hits replay button at the score scene
     public void checkAutoStart()
     {
@@ -139,9 +139,7 @@ public class GameGlobals : MonoBehaviour {
         touchController = GetComponent<TouchController>();
 
 
-    
-
-
+   
     }
 
 
@@ -162,7 +160,7 @@ public class GameGlobals : MonoBehaviour {
         if (Input.GetKey(KeyCode.Escape) && backButtonDelay <= 0)
         {
 
-        
+            Debug.Log(currentGameState);
             backButtonDelay = 50;
 
             if (currentGameState == "OnGameRunning")
@@ -183,8 +181,13 @@ public class GameGlobals : MonoBehaviour {
                 showQuitDialog();
                 return;
             }
-        
 
+            if (currentGameState == "onCriticalModeEnter")
+            {
+                resumeGameState.ExecuteAll();
+                playPlayerAnimaiton("run");
+                return;
+            }
         }
 
         if (backButtonDelay > 0)

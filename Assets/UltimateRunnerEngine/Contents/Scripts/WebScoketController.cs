@@ -247,12 +247,13 @@ public class WebScoketController : MonoBehaviour
 
         else if (msg == "10")
         {
-            #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-            #else
-            Application.Quit();
-            #endif
-            //MovingObstacle.instance.handlePauseAll(true);
+            //#if UNITY_EDITOR
+           // UnityEditor.EditorApplication.isPlaying = false;
+            //#else
+           // Application.Quit();
+           // #endif
+         
+            GameGlobals.Instance.pauseGameState.ExecuteAll();
         }
         // tweener.Kill();
         // tweener = DOTween.To(() => Controller.instance.currentLevelSpeed, x => Controller.instance.currentLevelSpeed = x, speedtemp, 0.4f).SetEase(Ease.Linear);

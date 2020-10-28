@@ -251,12 +251,13 @@ public class MovingObstacle : MonoBehaviour
 
     public  static void handlePauseAll(bool isPaused)
     {
-
-        foreach (MovingObstacle activeTrain in MovingObstacle.activeMovingObstacles)
+        if (MovingObstacle.activeMovingObstacles != null)
         {
-            activeTrain.handlePause(isPaused);
+            foreach (MovingObstacle activeTrain in MovingObstacle.activeMovingObstacles)
+            {
+                activeTrain.handlePause(isPaused);
+            }
         }
-
     }
 
 }
