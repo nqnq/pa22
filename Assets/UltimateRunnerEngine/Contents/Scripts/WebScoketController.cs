@@ -211,7 +211,7 @@ public class WebScoketController : MonoBehaviour
 
        else if(msg == "17") {
            // Controller.instance.currentLevelSpeed=44;
-           speedtemp = 65;
+            speedtemp = 65;
             GlobalConstants.speed_tar=65;
             GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
             GlobalConstants.speed_rc=GlobalConstants.speed_tar;
@@ -220,7 +220,7 @@ public class WebScoketController : MonoBehaviour
 
        else if(msg == "18") {
            // Controller.instance.currentLevelSpeed=46;
-           speedtemp =70;
+            speedtemp =70;
             GlobalConstants.speed_tar=70;
             GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
             GlobalConstants.speed_rc=GlobalConstants.speed_tar;
@@ -229,7 +229,7 @@ public class WebScoketController : MonoBehaviour
 
        else if(msg == "19") {
            // Controller.instance.currentLevelSpeed=48;
-           speedtemp = 75;
+            speedtemp = 75;
             GlobalConstants.speed_tar=75;
             GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
             GlobalConstants.speed_rc=GlobalConstants.speed_tar;
@@ -237,7 +237,7 @@ public class WebScoketController : MonoBehaviour
         }
 
         else if(msg == "20") {
-            speedtemp = 80;
+           speedtemp = 80;
            // Controller.instance.currentLevelSpeed=50;
             GlobalConstants.speed_tar=80;
             GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
@@ -247,18 +247,26 @@ public class WebScoketController : MonoBehaviour
 
         else if (msg == "10")
         {
-            //#if UNITY_EDITOR
-           // UnityEditor.EditorApplication.isPlaying = false;
-            //#else
-           // Application.Quit();
-           // #endif
-         
+     
             GameGlobals.Instance.pauseGameState.ExecuteAll();
+            
+        }
+
+        else if (msg == "25")
+        {
+     
+            #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+            #else
+            Application.Quit();
+            #endif
         }
         // tweener.Kill();
         // tweener = DOTween.To(() => Controller.instance.currentLevelSpeed, x => Controller.instance.currentLevelSpeed = x, speedtemp, 0.4f).SetEase(Ease.Linear);
         // speed_change();
     }
+
+  
 
     void Update() 
     {

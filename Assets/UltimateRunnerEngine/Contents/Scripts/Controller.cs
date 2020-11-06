@@ -1006,8 +1006,10 @@ public class Controller : MonoBehaviour {
 
                 //Debug.Log(trackMovementLast);
                 //Debug.Log(collider.name);
-
                 PowerupController.instance.SetGolds(-1);
+                currentLevelSpeed=35;
+               
+               
 
                 if (collidedObject.name.IndexOf("Green") != -1 && collidedObject != null)
                 {

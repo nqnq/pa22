@@ -162,6 +162,7 @@ public class PowerupController : MonoBehaviour
     }
 
    
+
     public bool isPowerUpCanSpawn(powerUpTypes powerUpType)
     {
         if (isAnyPowerupActive() == true) return false;
@@ -193,6 +194,8 @@ public class PowerupController : MonoBehaviour
         return null;
     }
 
+
+
     private bool isAnyPowerupActive()
     {
 
@@ -207,6 +210,7 @@ public class PowerupController : MonoBehaviour
 
         return false;
     }
+
 
     public void activatePowerUp(powerUpTypes powerUpType)
     {
@@ -243,6 +247,8 @@ public class PowerupController : MonoBehaviour
 
     }
 
+
+
     private void clearAllPowerupsAfterPickOne()
     {
 
@@ -274,6 +280,8 @@ public class PowerupController : MonoBehaviour
         }
 
     }
+
+
 
     private void clearAllRemainPowerupsForType(TrackObject.ObjectType type)
     {
@@ -768,6 +776,8 @@ public class PowerupController : MonoBehaviour
                     break;
                 }
 
+
+
                 currentTime += 0.1f;
                 yield return new WaitForSeconds(0.1f);
 
@@ -837,8 +847,6 @@ public class PowerupController : MonoBehaviour
             coin.pickUp();
         }
 
-
-
         yield return null;
     }
 
@@ -856,3 +864,12 @@ public class PowerupController : MonoBehaviour
     }
 
 }
+
+
+
+
+
+
+
+
+
