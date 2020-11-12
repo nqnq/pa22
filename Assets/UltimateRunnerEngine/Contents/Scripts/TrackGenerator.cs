@@ -3,7 +3,7 @@ using System.Collections;
 using System.Linq;
 using System.Collections.Generic;
 using System.Text;
-
+//using System;
 public enum GlodType
 {
     Red,
@@ -173,14 +173,22 @@ public class TrackGenerator : MonoBehaviour
         
         if (type == GlodType.Blue)
         {
-            GameObject gold = GameObject.Instantiate<GameObject>(golds[1]);
+            System.Random r = new System.Random();
+            int num = r.Next(1,8);
+            //Debug.Log(num); 
+
+            GameObject gold = GameObject.Instantiate<GameObject>(golds[num]);
             gold.transform.position = newpos;
             gold.transform.SetParent(glodParents.transform);
         }
 
         if (type == GlodType.Yellow)
         {
-            GameObject gold = GameObject.Instantiate<GameObject>(golds[2]);
+            System.Random r = new System.Random();
+            int num = r.Next(1,8);
+            //Debug.Log(num);
+
+            GameObject gold = GameObject.Instantiate<GameObject>(golds[num]);
             gold.transform.position = newpos;
             gold.transform.SetParent(glodParents.transform);
         }

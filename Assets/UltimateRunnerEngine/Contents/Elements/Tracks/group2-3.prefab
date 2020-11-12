@@ -1107,7 +1107,7 @@ PrefabInstance:
     - target: {fileID: 6203175032855805711, guid: 94f2e19e00b5ae7488b086722888a640,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 124.96
+      value: 150.06
       objectReference: {fileID: 0}
     - target: {fileID: 6203175032855805711, guid: 94f2e19e00b5ae7488b086722888a640,
         type: 3}
@@ -1149,6 +1149,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6203175032855805711, guid: 94f2e19e00b5ae7488b086722888a640,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.8095794
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203175032855805711, guid: 94f2e19e00b5ae7488b086722888a640,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 29.934837
+      objectReference: {fileID: 0}
     - target: {fileID: 7153802772151967866, guid: 94f2e19e00b5ae7488b086722888a640,
         type: 3}
       propertyPath: m_Name
@@ -1169,9 +1179,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 401120}
     m_Modifications:
+    - target: {fileID: 111244, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 127226, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 127816, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 157944, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 164588, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 173700, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
       propertyPath: m_Name
       value: Fruit
+      objectReference: {fileID: 0}
+    - target: {fileID: 188622, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 194788, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 468344, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
       propertyPath: m_LocalPosition.x

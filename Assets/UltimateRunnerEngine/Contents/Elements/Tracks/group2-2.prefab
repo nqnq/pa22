@@ -1949,9 +1949,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 433860}
     m_Modifications:
+    - target: {fileID: 111244, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 127226, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 127816, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 157944, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 164588, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 173700, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
       propertyPath: m_Name
       value: Fruit (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 188622, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 194788, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 468344, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2017,9 +2045,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 433860}
     m_Modifications:
+    - target: {fileID: 111244, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 127226, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 127816, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 157944, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 164588, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 173700, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
       propertyPath: m_Name
       value: Fruit
+      objectReference: {fileID: 0}
+    - target: {fileID: 188622, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 194788, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 468344, guid: e8549fbb406d1b841b569e489b7ffafe, type: 3}
       propertyPath: m_LocalPosition.x

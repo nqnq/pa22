@@ -39,12 +39,16 @@ public class Coin : MonoBehaviour
 
         }
         if (color == "yellow")
+
         {
+            //GameGlobals.Instance.achievements.increasePoints(1);
             PowerupController.instance.SetGolds(1);
         }
         if (color == "blue")
+
         {
-            PowerupController.instance.SetGolds(2);
+            //GameGlobals.Instance.achievements.increasePoints(2);
+            PowerupController.instance.SetGolds(1);
         }
     }
 
