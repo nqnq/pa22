@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using UnityEngine.Events;
 
 public class GameGlobals : MonoBehaviour {
 
 
     // Singleton
-    private static GameGlobals instance = null;
+    public static GameGlobals instance;
     public static GameGlobals Instance
     {
         get
@@ -157,7 +159,7 @@ public class GameGlobals : MonoBehaviour {
         // Back button
         // ANDROID BACK BUTTON EXIT MENU
 
-        if (Input.GetKey(KeyCode.Escape) && backButtonDelay <= 0)
+        if (Input.GetKey(KeyCode.Escape) && backButtonDelay <= 0 || (Input.GetKeyDown(KeyCode.M)))
         {
 
             Debug.Log(currentGameState);

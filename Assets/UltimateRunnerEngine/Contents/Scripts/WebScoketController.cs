@@ -152,7 +152,7 @@ public class WebScoketController : MonoBehaviour
        if (msg == "07")
         {
             result_num=result_num+1;
-            PowerupController.instance.SetGolds(2);
+            PowerupController.instance.SetGolds(3);
         }
         
         else if(msg == "11") {
@@ -245,14 +245,15 @@ public class WebScoketController : MonoBehaviour
             GlobalConstants.clock=0;
         }
 
-        else if (msg == "10")
+        else if (msg == "10") 
         {
      
             GameGlobals.Instance.pauseGameState.ExecuteAll();
             
         }
 
-        else if (msg == "25")
+   
+        else if (msg == "25" || msg == "26" ) 
         {
      
             #if UNITY_EDITOR
