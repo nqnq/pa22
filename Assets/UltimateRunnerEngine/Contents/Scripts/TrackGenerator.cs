@@ -8,7 +8,10 @@ public enum GlodType
 {
     Red,
     Yellow,
-    Blue
+    Blue,
+
+    ob
+
 }
 
 public enum GoldSide
@@ -42,6 +45,14 @@ public class TrackGenerator : MonoBehaviour
 
     public List<GameObject> golds = new List<GameObject>();
 
+    public List<GameObject> myobs = new List<GameObject>();
+
+    public List<GameObject> obs3 = new List<GameObject>();
+
+    public List<GameObject> obs4 = new List<GameObject>();
+    public List<GameObject> obs4b = new List<GameObject>();
+    public List<GameObject> obs5 = new List<GameObject>(); 
+    public List<GameObject> obs5b = new List<GameObject>(); 
     //private List<GameObject> currentSelectedTracks = new List<GameObject>();
 
     private bool startTrackPlaced;
@@ -58,16 +69,17 @@ public class TrackGenerator : MonoBehaviour
     [HideInInspector]
     public Vector3 rootPos = new Vector3(0, 0, -5000);
 
-    
-    public bool testMode;
+    public int num_record=0;
 
+    public bool testMode;
+    System.Random r = new System.Random();
     public static TrackGenerator instance;
     private void Awake()
     {
         instance = this;
         //PlayerPrefs.DeleteAll();
         //PlayerPrefs.SetInt("tutorial", 1);
-
+        //System.Random r = new System.Random();
         player = GameObject.Find("Player");
         tracksRoot = GameObject.Find("TracksRoot");
         trackObjectsRoot = GameObject.Find("TrackObjectsRoot");
@@ -135,34 +147,14 @@ public class TrackGenerator : MonoBehaviour
 
     }
 
+    
     // 添加一个标识
-    public void SetGold(GlodType type, float z, float side)
+    public void SetGold(GlodType type, float z, float time)
     {
         GameObject player = GameObject.Find("Player");
-        float x = 0;
-        // if(type == GlodType.Red || (side > 33 && side <66)) {
-        //     x = 0;
-        // } 
-        // else{
 
-        //     if(side <= 33) {
-        //         x = -6.5f;  
-        //     }
-
-        //     if(side >=66) {
-        //         x = 6.5f;
-        //     }
-        // }
-
-    //     else if(type == GlodType.Blue || (side > 33 && side <66)) {
-    //         x = 0;
-    //     } 
-    //    else if (type == GlodType.Yellow || (side > 33 && side <66)) 
-    //     {
-    //         x = 0;
-    //     } 
-
-        Vector3 newpos = new Vector3(x, 0.3590007f, player.transform.position.z + z);
+        Vector3 newpos = new Vector3(0, 0.3590007f, player.transform.position.z + z);
+        //Vector3 newpos2 = new Vector3(0, 0.3590007f, player.transform.position.z + z);
         if (type == GlodType.Red)
         {
             //Debug.Log(1111);
@@ -173,8 +165,8 @@ public class TrackGenerator : MonoBehaviour
         
         if (type == GlodType.Blue)
         {
-            System.Random r = new System.Random();
-            int num = r.Next(1,8);
+            //System.Random r = new System.Random();
+            int num = r.Next(1,7);
             //Debug.Log(num); 
 
             GameObject gold = GameObject.Instantiate<GameObject>(golds[num]);
@@ -184,8 +176,8 @@ public class TrackGenerator : MonoBehaviour
 
         if (type == GlodType.Yellow)
         {
-            System.Random r = new System.Random();
-            int num = r.Next(1,8);
+           //System.Random r = new System.Random();
+            int num = r.Next(1,7);
             //Debug.Log(num);
 
             GameObject gold = GameObject.Instantiate<GameObject>(golds[num]);
@@ -193,10 +185,199 @@ public class TrackGenerator : MonoBehaviour
             gold.transform.SetParent(glodParents.transform);
         }
 
+        if (type == GlodType.ob)
+        {
+            //System.Random r = new System.Random();
+            int num = r.Next(0,12);
+            //Debug.Log(num);
+
+            GameObject gold = GameObject.Instantiate<GameObject>(myobs[num]);
+            gold.transform.position = newpos;
+            gold.transform.SetParent(glodParents.transform);
+        }
+
+
         // 延迟消失
         CancelInvoke("DisplayGlod");
-        Invoke("DisplayGlod", 1.5f);
+        Invoke("DisplayGlod",time);
     }
+
+      public void SetGold2(GlodType type, float z, float time)
+    {
+        GameObject player = GameObject.Find("Player");
+
+        Vector3 newpos = new Vector3(0, 0.3590007f, player.transform.position.z + z);
+        //Vector3 newpos2 = new Vector3(0, 0.3590007f, player.transform.position.z + z);
+        if (type == GlodType.Red)
+        {
+            //Debug.Log(1111);
+            //System.Random r = new System.Random();
+            int num = r.Next(0,4);
+            GameObject gold = GameObject.Instantiate<GameObject>(obs3[num]);
+            gold.transform.position = newpos;
+            gold.transform.SetParent(glodParents.transform);
+        }
+        
+        if (type == GlodType.Blue || type == GlodType.Yellow)
+        {
+            //System.Random r = new System.Random();
+            int num = r.Next(4,9);
+            //Debug.Log(num); 
+
+            GameObject gold = GameObject.Instantiate<GameObject>(obs3[num]);
+            gold.transform.position = newpos;
+            gold.transform.SetParent(glodParents.transform);
+        }
+
+
+        if (type == GlodType.ob)
+        {
+            //System.Random r = new System.Random();
+            int num = r.Next(0,12);
+            //Debug.Log(num);
+
+            GameObject gold = GameObject.Instantiate<GameObject>(myobs[num]);
+            gold.transform.position = newpos;
+            gold.transform.SetParent(glodParents.transform);
+        }
+
+
+        // 延迟消失
+        CancelInvoke("DisplayGlod");
+        Invoke("DisplayGlod",time);
+    }
+
+    
+     public int Set_tar()  //设定目标
+
+     {
+        //System.Random r = new System.Random();
+        num_record= r.Next(0,8);
+        //Debug.Log(num_record*100000);
+        return num_record;
+     }
+    
+     public void SetGold3(GlodType type, float z, float time, int num_rc)
+    {
+        GameObject player = GameObject.Find("Player");
+   
+        Vector3 newpos = new Vector3(0, 0.3590007f, player.transform.position.z + z);
+        //Vector3 newpos2 = new Vector3(0, 0.3590007f, player.transform.position.z + z);
+        if (type == GlodType.Red)
+        {
+           
+            GameObject gold = GameObject.Instantiate<GameObject>(obs4[num_rc]);
+            gold.transform.position = newpos;
+            gold.transform.SetParent(glodParents.transform);
+
+        }
+        
+        if (type == GlodType.Blue || type == GlodType.Yellow)
+        {
+            //System.Random r = new System.Random();
+            int num = r.Next(0,8);
+            //Debug.Log(num); 
+            
+            if (num==num_rc)
+            {
+                if(num_rc==0)
+                {
+                  num=r.Next(1,8);
+                }
+                else if(num_rc==1)
+                {
+                  num=r.Next(2,8);
+                }
+                else
+                {
+                 num=r.Next(0,num_rc);
+                }       
+            }
+              
+            GameObject gold = GameObject.Instantiate<GameObject>(obs4b[num]);    //obs4与obs4b顺序是一种映射关系，不要变 ！！！！！！
+            gold.transform.position = newpos;
+            gold.transform.SetParent(glodParents.transform);
+        }
+
+
+        if (type == GlodType.ob)
+        {
+            //System.Random r = new System.Random();
+            int num = r.Next(0,12);
+            //Debug.Log(num);
+
+            GameObject gold = GameObject.Instantiate<GameObject>(myobs[num]);
+            gold.transform.position = newpos;
+            gold.transform.SetParent(glodParents.transform);
+        }
+
+
+        // 延迟消失
+        CancelInvoke("DisplayGlod");
+        Invoke("DisplayGlod",time);
+    }
+
+
+    public void SetGold4(GlodType type, float z, float time, int num_rc)
+    {
+        GameObject player = GameObject.Find("Player");
+   
+        Vector3 newpos = new Vector3(0, 0.3590007f, player.transform.position.z + z);
+        //Vector3 newpos2 = new Vector3(0, 0.3590007f, player.transform.position.z + z);
+        if (type == GlodType.Red)
+        {
+           
+            GameObject gold = GameObject.Instantiate<GameObject>(obs5[num_rc]);
+            gold.transform.position = newpos;
+            gold.transform.SetParent(glodParents.transform);
+
+        }
+        
+        if (type == GlodType.Blue || type == GlodType.Yellow)
+        {
+            //System.Random r = new System.Random();
+            int num = r.Next(0,48);
+     
+            if (num>=num_rc*6&&num<(num_rc*6+6))
+            {
+                if(num_rc==0)
+                {
+                  num=r.Next(6,48);
+                }
+                else if(num_rc==1)
+                {
+                  num=r.Next(12,48);
+                }
+                else  
+                {
+                 num=r.Next(0,num_rc*6);
+                }       
+            }
+
+            //Debug.Log(num*10000); 
+            GameObject gold = GameObject.Instantiate<GameObject>(obs5b[num]);    //obs4与obs4b顺序是一种映射关系，不要变 ！！！！！！
+            gold.transform.position = newpos;
+            gold.transform.SetParent(glodParents.transform);
+        }
+
+
+        if (type == GlodType.ob)
+        {
+            //System.Random r = new System.Random();
+            int num = r.Next(0,12);
+            //Debug.Log(num);
+
+            GameObject gold = GameObject.Instantiate<GameObject>(myobs[num]);
+            gold.transform.position = newpos;
+            gold.transform.SetParent(glodParents.transform);
+        }
+
+
+        // 延迟消失
+        CancelInvoke("DisplayGlod");
+        Invoke("DisplayGlod",time);
+    }
+
 
     // 删除标识
     public void DisplayGlod()
@@ -206,6 +387,7 @@ public class TrackGenerator : MonoBehaviour
             Destroy(glodParents.transform.GetChild(i).gameObject);
         }
     }
+
 
     public void Reset()
     {

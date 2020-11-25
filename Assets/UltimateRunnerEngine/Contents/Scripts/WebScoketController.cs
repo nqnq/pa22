@@ -43,8 +43,11 @@ public class WebScoketController : MonoBehaviour
     private Tweener tweener;
 
     private int speedtemp = 0;
-
-    private int result_num=0;
+    private int clock_tar=0;
+    public int result_num=0;
+    public int  num_tar=0;
+    public int tar_times=0;
+    System.Random r = new System.Random();
     void Awake()
     {
         Connect(url);
@@ -70,16 +73,13 @@ public class WebScoketController : MonoBehaviour
         webSocket.OnClosed = null;
         webSocket = null;
 
-// #if UNITY_EDITOR
-//         UnityEditor.EditorApplication.isPlaying = false;
-// #else
-//         Application.Quit();
-// #endif
     }
 
     void OnOpen(WebSocket ws)
     {
         Debug.Log("连接成功");
+        num_tar=TrackGenerator.instance.Set_tar();
+        Debug.Log(num_tar*100);
         // GameState.instance.ExecuteAll();
     }
 
@@ -102,219 +102,663 @@ public class WebScoketController : MonoBehaviour
 
     void OnMessageReceived(WebSocket ws, string msg)
 
-    {
+    {    
         //var GlobalConstants=new GlobalConstants();
-        Debug.Log(msg);
-        if (msg == "21")
-        {
-            TouchController.instance.sSwipeDirection = SwipeDirection.Up;
-        }
+         Debug.Log(msg);
+        //Debug.Log(tar_times*10000);
+        //Debug.Log(level.instance.value_level);
 
-        else if (msg == "22")
+        //难度1，2，3
+    
+        if (level.instance.value_level>=1 && level.instance.value_level<=3)
         {
-            TouchController.instance.sSwipeDirection = SwipeDirection.Down;
-        }
-
-        else if (msg == "23")
-        {
-            TouchController.instance.sSwipeDirection = SwipeDirection.Left;
-        }
-
-        else if (msg == "24")
-        {
-            TouchController.instance.sSwipeDirection = SwipeDirection.Right;
-        }
-       
-        if (msg == "01")
-
-        {
+            if (msg == "01")
+           {
             result_num=result_num+1;
-			// PowerupController.instance.SetGolds(1);
-			TrackGenerator.instance.SetGold(GlodType.Yellow, 45, UnityEngine.Random.Range(0f, 100f));
-		}
-
-        if (msg == "02")
-
-        {
+            TrackGenerator.instance.SetGold(GlodType.ob, 120, 5f);        
+		   }
+           if (msg == "02")
+          {
             result_num=result_num+1;
-			// PowerupController.instance.SetGolds(1);
-			TrackGenerator.instance.SetGold(GlodType.Blue, 45, UnityEngine.Random.Range(0f, 100f));
-		}
+            TrackGenerator.instance.SetGold(GlodType.ob, 120, 5f);   
+		  }
 
-        if (msg == "03")
-
-        {
+          if (msg == "03")
+          {
             result_num=result_num+1;
-			//powerupController.instance.SetGolds(1);
-			TrackGenerator.instance.SetGold(GlodType.Red, 45, UnityEngine.Random.Range(0f, 100f));
-		}
+            TrackGenerator.instance.SetGold(GlodType.ob, 120, 5f);   
+		  }
 
-       if (msg == "07")
-        {
+         if (msg == "04"||msg == "05")
+         {
+            result_num=result_num+1;
+            TrackGenerator.instance.SetGold(GlodType.ob, 120, 5f);    
+		 }
+
+          if (msg == "06")
+         {
+            result_num=result_num+1;
+            TrackGenerator.instance.SetGold(GlodType.ob, 120, 5f);
+		 }
+         if (msg == "07")
+         {
             result_num=result_num+1;
             PowerupController.instance.SetGolds(3);
-        }
-        
-        else if(msg == "11") {
-           // Controller.instance.currentLevelSpeed=30;
+         }
+         else if(msg == "11")
+         {
             speedtemp=35;
-            GlobalConstants.speed_tar=35;
-            GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
-            GlobalConstants.speed_rc=GlobalConstants.speed_tar;
-            GlobalConstants.clock=0;
-        }
+         }
 
-        else if(msg == "12") {
-            speedtemp= 40;
-            //Controller.instance.currentLevelSpeed=32;
-            GlobalConstants.speed_tar=40;
-            GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
-            GlobalConstants.speed_rc=GlobalConstants.speed_tar;
-            GlobalConstants.clock=0;
-        }
+         else if(msg == "12") 
+         {
+            speedtemp=38;
+         }
 
-       else if(msg == "13") {
-           speedtemp= 45;
-            //Controller.instance.currentLevelSpeed=34;
-            GlobalConstants.speed_tar=45;
-            GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
-            GlobalConstants.speed_rc=GlobalConstants.speed_tar;
-            GlobalConstants.clock=0;
-        }
+         else if(msg == "13") 
+         {
+            speedtemp=40;
+         }
 
-       else if(msg == "14") {
-           // Controller.instance.currentLevelSpeed=36;
-            speedtemp = 50;
-            GlobalConstants.speed_tar=50;
-            GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
-            GlobalConstants.speed_rc=GlobalConstants.speed_tar;
-            GlobalConstants.clock=0;
-        }
+         else if(msg == "14") 
+         {
+            speedtemp =43;
+         }
 
-       else if(msg == "15") {
-           // Controller.instance.currentLevelSpeed=38;
-           speedtemp = 55;
-            GlobalConstants.speed_tar=55;
-            GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
-            GlobalConstants.speed_rc=GlobalConstants.speed_tar;
-            GlobalConstants.clock=0;
-        }
+         else if(msg == "15") 
+         {
+            speedtemp=45;
+         }
 
-       else if(msg == "16") {
-            //Controller.instance.currentLevelSpeed=40;
-            speedtemp = 60;
-            GlobalConstants.speed_tar=60;
-            GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
-            GlobalConstants.speed_rc=GlobalConstants.speed_tar;
-            GlobalConstants.clock=0;
-        }
-
-       else if(msg == "17") {
-           // Controller.instance.currentLevelSpeed=44;
-            speedtemp = 65;
-            GlobalConstants.speed_tar=65;
-            GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
-            GlobalConstants.speed_rc=GlobalConstants.speed_tar;
-            GlobalConstants.clock=0;
-        }
-
-       else if(msg == "18") {
-           // Controller.instance.currentLevelSpeed=46;
-            speedtemp =70;
-            GlobalConstants.speed_tar=70;
-            GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
-            GlobalConstants.speed_rc=GlobalConstants.speed_tar;
-            GlobalConstants.clock=0;
-        }
-
-       else if(msg == "19") {
-           // Controller.instance.currentLevelSpeed=48;
-            speedtemp = 75;
-            GlobalConstants.speed_tar=75;
-            GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
-            GlobalConstants.speed_rc=GlobalConstants.speed_tar;
-            GlobalConstants.clock=0;
-        }
-
-        else if(msg == "20") {
-           speedtemp = 80;
-           // Controller.instance.currentLevelSpeed=50;
-            GlobalConstants.speed_tar=80;
-            GlobalConstants.speed_t=System.Math.Abs(GlobalConstants.speed_tar-GlobalConstants.speed_rc)/GlobalConstants.speed_a;
-            GlobalConstants.speed_rc=GlobalConstants.speed_tar;
-            GlobalConstants.clock=0;
-        }
-
-        else if (msg == "10") 
-        {
-     
-            GameGlobals.Instance.pauseGameState.ExecuteAll();
-            
-        }
-
-   
-        else if (msg == "25" || msg == "26" ) 
-        {
-     
+         else if(msg == "16") 
+         {
+            speedtemp=48;
+         }
+         else if(msg == "17") 
+         {
+            speedtemp=50;
+         }
+         else if(msg == "18") 
+         {
+            speedtemp =53;
+         }
+         else if(msg == "19") 
+         {
+            speedtemp =56;
+         }
+         else if(msg == "20") 
+         { 
+           speedtemp = 60;
+         }
+         else if (msg == "10") 
+         {
+            GameGlobals.Instance.pauseGameState.ExecuteAll();  
+         }
+         else if (msg == "25" || msg == "26" ) 
+         {
             #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
             #else
             Application.Quit();
             #endif
+         }
+
+         // else if (msg == "1111")
+         // {
+         //     // SetObscate[] o = FindObjectsOfType<SetObscate>();
+         //     // foreach (SetObscate item in o)
+         //     // {
+         //     //     // x 6.5    z 10-220
+         //     //     item.SetObstruct(-6.5f, 100f);
+         //     // }
+         // }
         }
-        // tweener.Kill();
-        // tweener = DOTween.To(() => Controller.instance.currentLevelSpeed, x => Controller.instance.currentLevelSpeed = x, speedtemp, 0.4f).SetEase(Ease.Linear);
-        // speed_change();
+
+        //难度4，5，6
+    
+        if (level.instance.value_level>=4 && level.instance.value_level<=6)
+        {
+            if (msg == "01")
+           {
+            result_num=result_num+1;
+            TrackGenerator.instance.SetGold(GlodType.Yellow, 50, 1.5f);       
+		   }
+           if (msg == "02")
+          {
+            result_num=result_num+1;
+			TrackGenerator.instance.SetGold(GlodType.Blue, 50, 1.5f);
+		  }
+
+          if (msg == "03")
+          {
+            result_num=result_num+1;
+			   TrackGenerator.instance.SetGold(GlodType.Red, 50, 1.5f);
+		   }
+
+         if (msg == "04"||msg == "05")
+         {
+            result_num=result_num+1;
+            TrackGenerator.instance.SetGold(GlodType.Yellow, 50, 1.5f);
+            TrackGenerator.instance.SetGold(GlodType.ob, 120, 5f);    
+		 }
+
+          if (msg == "06")
+         {
+            result_num=result_num+1;
+			   TrackGenerator.instance.SetGold(GlodType.Red, 50, 1.5f);
+            TrackGenerator.instance.SetGold(GlodType.ob, 120, 5f);
+		 }
+         if (msg == "07")
+         {
+            result_num=result_num+1;
+            PowerupController.instance.SetGolds(3);
+         }
+         else if(msg == "11")
+         {
+            speedtemp=40;
+         }
+
+         else if(msg == "12") 
+         {
+            speedtemp=42;
+         }
+
+         else if(msg == "13") 
+         {
+            speedtemp=45;
+         }
+
+         else if(msg == "14") 
+         {
+            speedtemp =48;
+         }
+
+         else if(msg == "15") 
+         {
+            speedtemp =50;
+         }
+
+         else if(msg == "16") 
+         {
+            speedtemp=53;
+         }
+         else if(msg == "17") 
+         {
+            speedtemp=55;
+         }
+         else if(msg == "18") 
+         {
+            speedtemp=58;
+         }
+         else if(msg == "19") 
+         {
+            speedtemp=60;
+         }
+         else if(msg == "20") 
+         { 
+           speedtemp=65;
+         }
+         else if (msg == "10") 
+         {
+            GameGlobals.Instance.pauseGameState.ExecuteAll();  
+         }
+         else if (msg == "25" || msg == "26" ) 
+         {
+            #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+            #else
+            Application.Quit();
+            #endif
+         }
+
+         // else if (msg == "1111")
+         // {
+         //     // SetObscate[] o = FindObjectsOfType<SetObscate>();
+         //     // foreach (SetObscate item in o)
+         //     // {
+         //     //     // x 6.5    z 10-220
+         //     //     item.SetObstruct(-6.5f, 100f);
+         //     // }
+         // }
+        }
+
+        //难度7，8，9
+    
+        if (level.instance.value_level>=7&& level.instance.value_level<=9)
+        {
+            if (msg == "01")
+           {
+            result_num=result_num+1;
+            TrackGenerator.instance.SetGold2(GlodType.Yellow, 50, 1.5f);       
+		    }
+           if (msg == "02")
+          {
+            result_num=result_num+1;
+			   TrackGenerator.instance.SetGold2(GlodType.Blue, 50, 1.5f);
+		    }
+
+          if (msg == "03")
+          {
+            result_num=result_num+1;
+			   TrackGenerator.instance.SetGold2(GlodType.Red, 50, 1.5f);
+		    }
+
+         if (msg == "04"||msg == "05")
+         {
+            result_num=result_num+1;
+            TrackGenerator.instance.SetGold2(GlodType.Yellow, 50, 1.5f);
+            TrackGenerator.instance.SetGold2(GlodType.ob, 120, 5f);    
+		    }
+
+          if (msg == "06")
+         {
+            result_num=result_num+1;
+			   TrackGenerator.instance.SetGold2(GlodType.Red, 50, 1.5f);
+            TrackGenerator.instance.SetGold2(GlodType.ob, 120, 5f);
+		    }
+         if (msg == "07")
+         {
+            result_num=result_num+1;
+            PowerupController.instance.SetGolds(3);
+         }
+         else if(msg == "11")
+         {
+            speedtemp=45;
+         }
+
+         else if(msg == "12") 
+         {
+            speedtemp=48;
+         }
+
+         else if(msg == "13") 
+         {
+            speedtemp=50;
+         }
+
+         else if(msg == "14") 
+         {
+            speedtemp =53;
+         }
+
+         else if(msg == "15") 
+         {
+            speedtemp =56;
+         }
+
+         else if(msg == "16") 
+         {
+            speedtemp = 58;
+         }
+         else if(msg == "17") 
+         {
+            speedtemp = 60;
+         }
+         else if(msg == "18") 
+         {
+            speedtemp =62;
+         }
+         else if(msg == "19") 
+         {
+            speedtemp = 65;
+         }
+         else if(msg == "20") 
+         { 
+           speedtemp = 70;
+         }
+         else if (msg == "10") 
+         {
+            GameGlobals.Instance.pauseGameState.ExecuteAll();  
+         }
+         else if (msg == "25" || msg == "26" ) 
+         {
+            #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+            #else
+            Application.Quit();
+            #endif
+         }
+
+         // else if (msg == "1111")
+         // {
+         //     // SetObscate[] o = FindObjectsOfType<SetObscate>();
+         //     // foreach (SetObscate item in o)
+         //     // {
+         //     //     // x 6.5    z 10-220
+         //     //     item.SetObstruct(-6.5f, 100f);
+         //     // }
+         // }
+        }
+
+        //难度10，11，12
+    
+        if (level.instance.value_level>=10&& level.instance.value_level<=12)
+        {
+            if (msg == "01")
+           {
+             
+             result_num=result_num+1;
+             TrackGenerator.instance.SetGold3(GlodType.Yellow, 50, 1.5f,num_tar);       
+		    }
+           if (msg == "02")
+          {
+            result_num=result_num+1;
+			   TrackGenerator.instance.SetGold3(GlodType.Blue, 50, 1.5f,num_tar);
+		    }
+
+          if (msg == "03")
+          {
+            if (tar_times==5)
+            {
+               num_tar=TrackGenerator.instance.Set_tar();
+               Debug.Log(num_tar*100);
+               tar_times=0;
+               clock_tar=r.Next(0,2);
+            }
+            
+            if (clock_tar==0)
+            {
+              result_num=result_num+1;
+			     TrackGenerator.instance.SetGold3(GlodType.Red, 50, 1.5f,num_tar);
+              TrackGenerator.instance.SetGold3(GlodType.ob, 120, 5f,num_tar);
+              tar_times+=1;
+              clock_tar=0;
+            }
+
+            else if(clock_tar==1)
+            {
+              result_num=result_num+1;
+			     TrackGenerator.instance.SetGold3(GlodType.Yellow, 50, 1.5f,num_tar);
+              TrackGenerator.instance.SetGold3(GlodType.ob, 120, 5f,num_tar);
+              tar_times+=1;
+              clock_tar=0;
+            }
+       
+		   } 
+
+         if (msg == "04"||msg == "05")
+         {
+            result_num=result_num+1;
+            TrackGenerator.instance.SetGold3(GlodType.Yellow, 50, 1.5f, num_tar);
+            TrackGenerator.instance.SetGold3(GlodType.ob, 120, 5f, num_tar);    
+		  }
+
+          if (msg == "06")
+         {
+            result_num=result_num+1;
+            if (tar_times==5)
+            {
+               num_tar=TrackGenerator.instance.Set_tar();
+               Debug.Log(num_tar*100);
+               tar_times=0;
+               clock_tar=r.Next(0,2);
+            }
+
+            if (clock_tar==0)
+            {
+              result_num=result_num+1;
+			     TrackGenerator.instance.SetGold3(GlodType.Red, 50, 1.5f,num_tar);
+              TrackGenerator.instance.SetGold3(GlodType.ob, 120, 5f,num_tar);
+              tar_times+=1;
+              clock_tar=0;
+            }
+
+            else if(clock_tar==1)
+            {
+              result_num=result_num+1;
+			     TrackGenerator.instance.SetGold3(GlodType.Yellow, 50, 1.5f,num_tar);
+              TrackGenerator.instance.SetGold3(GlodType.ob, 120, 5f,num_tar);
+              tar_times+=1;
+              clock_tar=0;
+            }
+			
+		  }
+         if (msg == "07")
+         {
+            result_num=result_num+1;
+            PowerupController.instance.SetGolds(3);
+         }
+         else if(msg == "11")
+         {
+            speedtemp=50;
+         }
+
+         else if(msg == "12") 
+         {
+            speedtemp=52;
+         }
+
+         else if(msg == "13") 
+         {
+            speedtemp=55;
+         }
+
+         else if(msg == "14") 
+         {
+            speedtemp =58;
+         }
+
+         else if(msg == "15") 
+         {
+            speedtemp =60;
+         }
+
+         else if(msg == "16") 
+         {
+            speedtemp = 62;
+         }
+         else if(msg == "17") 
+         {
+            speedtemp = 65;
+         }
+         else if(msg == "18") 
+         {
+            speedtemp =68;
+         }
+         else if(msg == "19") 
+         {
+            speedtemp = 70;
+         }
+         else if(msg == "20") 
+         { 
+           speedtemp = 75;
+         }
+         else if (msg == "10") 
+         {
+            GameGlobals.Instance.pauseGameState.ExecuteAll();  
+         }
+         else if (msg == "25" || msg == "26" ) 
+         {
+            #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+            #else
+            Application.Quit();
+            #endif
+         }
+
+         // else if (msg == "1111")
+         // {
+         //     // SetObscate[] o = FindObjectsOfType<SetObscate>();
+         //     // foreach (SetObscate item in o)
+         //     // {
+         //     //     // x 6.5    z 10-220
+         //     //     item.SetObstruct(-6.5f, 100f);
+         //     // }
+         // }
+        }
+
+         //难度13，14，15
+    
+        if (level.instance.value_level>=13&& level.instance.value_level<=15)
+        {
+            if (msg == "01")
+           {
+             
+             result_num=result_num+1;
+             TrackGenerator.instance.SetGold4(GlodType.Yellow, 50, 1.5f,num_tar);       
+		     }
+           if (msg == "02")
+          {
+            result_num=result_num+1;
+			   TrackGenerator.instance.SetGold4(GlodType.Blue, 50, 1.5f,num_tar);
+		    }  
+
+          if (msg == "03")
+          {
+            if (tar_times==5)
+            {
+               num_tar=TrackGenerator.instance.Set_tar();
+               Debug.Log(num_tar*100);
+               tar_times=0;
+               clock_tar=r.Next(0,2);
+            }
+
+            if (clock_tar==0)
+            {
+              result_num=result_num+1;
+			     TrackGenerator.instance.SetGold4(GlodType.Red, 50, 1.5f,num_tar);
+              TrackGenerator.instance.SetGold4(GlodType.ob, 120, 5f,num_tar);
+              tar_times+=1;
+              clock_tar=0;
+            }
+
+            else if(clock_tar==1)
+            {
+              result_num=result_num+1;
+			     TrackGenerator.instance.SetGold4(GlodType.Yellow, 50, 1.5f,num_tar);
+              TrackGenerator.instance.SetGold4(GlodType.ob, 120, 5f,num_tar);
+              tar_times+=1;
+              clock_tar=0;
+            } 
+         
+		    }
+
+         if (msg == "04"||msg == "05")
+         {
+            result_num=result_num+1;
+            TrackGenerator.instance.SetGold4(GlodType.Yellow, 50, 1.5f, num_tar);
+            TrackGenerator.instance.SetGold4(GlodType.ob, 120, 5f, num_tar);    
+		   }
+
+          if (msg == "06")
+          {
+            if (tar_times==5)
+            {
+               num_tar=TrackGenerator.instance.Set_tar();
+               Debug.Log(num_tar*100);
+               tar_times=0;
+               clock_tar=r.Next(0,2);
+            }
+            if (clock_tar==0)
+            {
+              result_num=result_num+1;
+			     TrackGenerator.instance.SetGold4(GlodType.Red, 50, 1.5f,num_tar);
+              TrackGenerator.instance.SetGold4(GlodType.ob, 120, 5f,num_tar);
+              tar_times+=1;
+              clock_tar=0;
+            }
+
+            else if(clock_tar==1)
+            {
+              result_num=result_num+1;
+			     TrackGenerator.instance.SetGold4(GlodType.Yellow, 50, 1.5f,num_tar);
+              TrackGenerator.instance.SetGold4(GlodType.ob, 120, 5f,num_tar);
+              tar_times+=1;
+              clock_tar=0;
+            }      
+		    }
+
+          if (msg == "07")
+          {
+            result_num=result_num+1;
+            PowerupController.instance.SetGolds(3);
+          }
+          else if(msg == "11")
+          {
+            speedtemp=55;
+          }
+
+          else if(msg == "12") 
+          {
+            speedtemp=58;
+          }
+
+          else if(msg == "13") 
+          {
+            speedtemp=60;
+          }
+
+          else if(msg == "14") 
+          {
+            speedtemp =62;
+          }
+
+          else if(msg == "15") 
+          {
+            speedtemp =65;
+          }
+
+          else if(msg == "16") 
+          {
+            speedtemp = 68;
+          }
+          else if(msg == "17") 
+          {
+            speedtemp = 70;
+          }
+          else if(msg == "18") 
+          {
+            speedtemp =73;
+          }
+          else if(msg == "19") 
+          {
+            speedtemp = 80;
+          }
+          else if(msg == "20") 
+          { 
+           speedtemp = 85;
+          }
+          else if (msg == "10") 
+          {
+            GameGlobals.Instance.pauseGameState.ExecuteAll();  
+          }
+          else if (msg == "25" || msg == "26" ) 
+          {
+            #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+            #else
+            Application.Quit();
+            #endif
+          }
+
+         // else if (msg == "1111")
+         // {
+         //     // SetObscate[] o = FindObjectsOfType<SetObscate>();
+         //     // foreach (SetObscate item in o)
+         //     // {
+         //     //     // x 6.5    z 10-220
+         //     //     item.SetObstruct(-6.5f, 100f);
+         //     // }
+         // }
+        }
+
     }
 
   
-
+    public float fireRate=0.3F;
+    private float nextFire=0.0F;
     void Update() 
     {
         Controller.instance.currentLevelSpeed = Mathf.Lerp(Controller.instance.currentLevelSpeed, speedtemp, Time.deltaTime);
+
+        if (Time.time > nextFire) 
+        {
+            nextFire = Time.time + fireRate;
+            if(webSocket != null)
+                webSocket.Send(level.instance.value_level.ToString());
+                //Debug.Log("fasong:" + nextFire.ToString());     
+        }
+
     }
-
-    void speed_change()
-    {   
-        //if(SceneManager.GetActiveScene().name != "Main") return;
-      if (GlobalConstants.clock==0)
-      { 
-        if (Controller.instance.currentLevelSpeed<GlobalConstants.speed_tar){ 
-           Controller.instance.currentLevelSpeed=Controller.instance.currentLevelSpeed+ GlobalConstants.speed_a*GlobalConstants.speed_t/3;
-          if(Controller.instance.currentLevelSpeed>=GlobalConstants.speed_tar){
-               if(Controller.instance.currentLevelSpeed>=80){
-                   Controller.instance.currentLevelSpeed=80;
-               }
-               GlobalConstants.clock_num+=GlobalConstants.clock_num;
-              // return;
-          }
-      } 
-
-      else if (Controller.instance.currentLevelSpeed>GlobalConstants.speed_tar){ 
-          Controller.instance.currentLevelSpeed=Controller.instance.currentLevelSpeed-GlobalConstants.speed_a*GlobalConstants.speed_t/3;
-          if(Controller.instance.currentLevelSpeed<=GlobalConstants.speed_tar){
-               if(Controller.instance.currentLevelSpeed<=35){
-                   Controller.instance.currentLevelSpeed=35;
-               }
-               GlobalConstants.clock_num+=GlobalConstants.clock_num;
-               //return;
-          }
-       } 
-
-       else{
-               GlobalConstants.clock_num+=GlobalConstants.clock_num;
-              // return;
-           }
-
-
-        if(GlobalConstants.clock_num==3){
-            GlobalConstants.clock_num=0;
-            GlobalConstants.clock=1;
-        } 
-
-      }
-        //Debug.Log(Controller.instance.currentLevelSpeed);
-    }
-}
-
-
+    
+} 
