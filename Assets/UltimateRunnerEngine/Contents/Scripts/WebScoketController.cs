@@ -109,9 +109,9 @@ public class WebScoketController : MonoBehaviour
         //Debug.Log(tar_times*10000);
         //Debug.Log(level.instance.value_level);
 
-        //难度1，2，3
+        //游戏难度一
     
-        if (level.instance.value_level>=1 && level.instance.value_level<=3)
+        if (myboard.instance.level_num==1)
         {
             if (msg == "01")
            {
@@ -217,9 +217,9 @@ public class WebScoketController : MonoBehaviour
          // }
         }
 
-        //难度4，5，6
+        //游戏难度二
     
-        if (level.instance.value_level>=4 && level.instance.value_level<=6)
+        if (myboard.instance.level_num==2)
         {
             if (msg == "01")
            {
@@ -325,9 +325,9 @@ public class WebScoketController : MonoBehaviour
          // }
         }
 
-        //难度7，8，9
+        //游戏难度三
     
-        if (level.instance.value_level>=7&& level.instance.value_level<=9)
+        if (myboard.instance.level_num==3)
         {
             if (msg == "01")
            {
@@ -433,9 +433,9 @@ public class WebScoketController : MonoBehaviour
          // }
         }
 
-        //难度10，11，12
+        //游戏难度四
     
-        if (level.instance.value_level>=10&& level.instance.value_level<=12)
+        if (myboard.instance.level_num==4)
         {
             if (msg == "01")
            {
@@ -590,9 +590,9 @@ public class WebScoketController : MonoBehaviour
          // }
         }
 
-         //难度13，14，15
+         //游戏难度五
     
-        if (level.instance.value_level>=13&& level.instance.value_level<=15)
+        if (myboard.instance.level_num==5)
         {
             if (msg == "01")
            {
@@ -750,15 +750,17 @@ public class WebScoketController : MonoBehaviour
   
     public float fireRate=0.3F;
     private float nextFire=0.0F;
+    public  string levelstring;
     void Update() 
     {
         Controller.instance.currentLevelSpeed = Mathf.Lerp(Controller.instance.currentLevelSpeed, speedtemp, Time.deltaTime);
-
+        levelstring=level.instance.value_level.ToString()+","+myboard.instance.level_num.ToString(); 
+        //Debug.Log(levelstring);
         if (Time.time > nextFire) 
         {
             nextFire = Time.time + fireRate;
             if(webSocket != null)
-                webSocket.Send(level.instance.value_level.ToString());
+                webSocket.Send(levelstring);  //发送专注度难度
                 //Debug.Log("fasong:" + nextFire.ToString());     
         }
 
