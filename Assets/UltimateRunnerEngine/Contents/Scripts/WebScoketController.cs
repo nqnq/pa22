@@ -51,6 +51,7 @@ public class WebScoketController : MonoBehaviour
     void Awake()
     {
         Connect(url);
+        instance=this;
     }
 
     public void Connect(string str)

@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: yellow
-  m_Shader: {fileID: 4800000, guid: 45ca59f9a307b6145bc1a9574660049e, type: 3}
+  m_Shader: {fileID: 14000, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -32,6 +32,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -62,6 +66,7 @@ Material:
     m_Floats:
     - V_CW_MV_MAT: 1
     - _BumpScale: 1
+    - _Cull: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -83,10 +88,12 @@ Material:
     - _V_CW_IBL_Contrast: 1
     - _V_CW_IBL_Intensity: 1
     - _V_CW_Rim_Bias: 0.2
+    - _WindQuality: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.88951206, g: 1, b: 0.015138423, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
     - _V_CW_Emission_Color: {r: 1, g: 1, b: 1, a: 1}
     - _V_CW_Fog_Color: {r: 1, g: 1, b: 1, a: 1}
     - _V_CW_Rim_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -70,7 +70,8 @@ public class TrackGenerator : MonoBehaviour
     public Vector3 rootPos = new Vector3(0, 0, -5000);
 
     public int num_record=0;
-
+    public int num_rc3=0;
+    public int num_rc4=0;
     public bool testMode;
     System.Random r = new System.Random();
     public static TrackGenerator instance;
@@ -263,6 +264,7 @@ public class TrackGenerator : MonoBehaviour
    
         Vector3 newpos = new Vector3(0, 0.3590007f, player.transform.position.z + z);
         //Vector3 newpos2 = new Vector3(0, 0.3590007f, player.transform.position.z + z);
+        num_rc3=num_rc;
         if (type == GlodType.Red)
         {
            
@@ -324,6 +326,7 @@ public class TrackGenerator : MonoBehaviour
    
         Vector3 newpos = new Vector3(0, 0.3590007f, player.transform.position.z + z);
         //Vector3 newpos2 = new Vector3(0, 0.3590007f, player.transform.position.z + z);
+        num_rc4=num_rc;
         if (type == GlodType.Red)
         {
            
