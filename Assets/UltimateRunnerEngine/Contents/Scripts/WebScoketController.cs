@@ -133,12 +133,14 @@ public class WebScoketController : MonoBehaviour
          if (msg == "04"||msg == "05")
          {
             result_num=result_num+1;
+            TrackGenerator.instance.SetGold(GlodType.Blue, 50, 1.5f);
             TrackGenerator.instance.SetGold(GlodType.ob, 120, 5f);    
 		 }
 
           if (msg == "06")
          {
             result_num=result_num+1;
+            TrackGenerator.instance.SetGold(GlodType.Yellow, 50, 1.5f);
             TrackGenerator.instance.SetGold(GlodType.ob, 120, 5f);
 		 }
          if (msg == "07")
