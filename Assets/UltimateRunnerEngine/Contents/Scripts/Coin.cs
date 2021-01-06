@@ -20,7 +20,7 @@ public class Coin : MonoBehaviour
 
         // Coins are deactiving in coin line controllers
 
-        GameGlobals.Instance.achievements.increasePoints(1);
+        GameGlobals.Instance.achievements.increasePoints(2);
         GameGlobals.Instance.controller.doAnEffect(Controller.EffetcType.PointPickup);
 
         if (audioPitch > 0)

@@ -3861,24 +3861,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &223
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1514}
-  - component: {fileID: 1395}
-  - component: {fileID: 1701}
-  m_Layer: 5
-  m_Name: BlackBoard
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &224
 GameObject:
   m_ObjectHideFlags: 0
@@ -4770,26 +4752,6 @@ GameObject:
   - component: {fileID: 1202}
   m_Layer: 0
   m_Name: sign
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &277
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1525}
-  - component: {fileID: 1405}
-  - component: {fileID: 1721}
-  - component: {fileID: 1720}
-  - component: {fileID: 1719}
-  m_Layer: 5
-  m_Name: lblCollectedFruitCount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5703,24 +5665,6 @@ GameObject:
   - component: {fileID: 1738}
   m_Layer: 5
   m_Name: CharacterScrollView
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &330
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1539}
-  - component: {fileID: 1416}
-  - component: {fileID: 1741}
-  m_Layer: 5
-  m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6790,26 +6734,6 @@ GameObject:
   - component: {fileID: 973}
   m_Layer: 0
   m_Name: mixamorig:LeftHandRing4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &393
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1550}
-  - component: {fileID: 1423}
-  - component: {fileID: 1756}
-  - component: {fileID: 1755}
-  - component: {fileID: 1754}
-  m_Layer: 5
-  m_Name: lblCollectedLetterCount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8371,24 +8295,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &484
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1566}
-  - component: {fileID: 1437}
-  - component: {fileID: 1783}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &485
 GameObject:
   m_ObjectHideFlags: 0
@@ -9123,23 +9029,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &527
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1578}
-  - component: {fileID: 1619}
-  m_Layer: 5
-  m_Name: GamePlayScorePanel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
 --- !u!1 &528
 GameObject:
   m_ObjectHideFlags: 0
@@ -28328,14 +28217,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 219}
   m_CullTransparentMesh: 0
---- !u!222 &1395
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223}
-  m_CullTransparentMesh: 0
 --- !u!222 &1396
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28407,14 +28288,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 268}
-  m_CullTransparentMesh: 0
---- !u!222 &1405
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277}
   m_CullTransparentMesh: 0
 --- !u!222 &1406
 CanvasRenderer:
@@ -28496,14 +28369,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329}
   m_CullTransparentMesh: 0
---- !u!222 &1416
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330}
-  m_CullTransparentMesh: 0
 --- !u!222 &1417
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28551,14 +28416,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382}
-  m_CullTransparentMesh: 0
---- !u!222 &1423
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393}
   m_CullTransparentMesh: 0
 --- !u!222 &1424
 CanvasRenderer:
@@ -28663,14 +28520,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475}
-  m_CullTransparentMesh: 0
---- !u!222 &1437
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484}
   m_CullTransparentMesh: 0
 --- !u!222 &1438
 CanvasRenderer:
@@ -29342,7 +29191,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -252}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1490
@@ -29394,6 +29243,7 @@ RectTransform:
   - {fileID: 827}
   - {fileID: 530312178}
   - {fileID: 486962350}
+  - {fileID: 679484463}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -29830,25 +29680,6 @@ RectTransform:
   m_AnchoredPosition: {x: 338, y: 156}
   m_SizeDelta: {x: 275, y: 239}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!224 &1514
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1578}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -63, y: -86}
-  m_SizeDelta: {x: 591, y: 82}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1515
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29984,8 +29815,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -183, y: -199}
-  m_SizeDelta: {x: 465, y: 161}
+  m_AnchoredPosition: {x: -194.55, y: -210.9999}
+  m_SizeDelta: {x: 389.1039, y: 137.0007}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1522
 RectTransform:
@@ -30044,25 +29875,6 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1169, y: 2064}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!224 &1525
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99999285, y: 0.99999285, z: 0.99999285}
-  m_Children: []
-  m_Father: {fileID: 1578}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -135, y: -140}
-  m_SizeDelta: {x: 122, y: 82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1526
 RectTransform:
@@ -30334,25 +30146,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!224 &1539
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1578}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000020503998, y: -88.81}
-  m_SizeDelta: {x: 111, y: 114.63}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1540
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30445,7 +30238,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1571}
-  - {fileID: 1578}
   - {fileID: 1590}
   - {fileID: 1561}
   m_Father: {fileID: 1491}
@@ -30552,25 +30344,6 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 90.251, y: -547}
   m_SizeDelta: {x: 368.5, y: 141}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!224 &1550
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99999285, y: 0.99999285, z: 0.99999285}
-  m_Children: []
-  m_Father: {fileID: 1578}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 118, y: -140}
-  m_SizeDelta: {x: 91, y: 82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1551
 RectTransform:
@@ -30789,7 +30562,7 @@ RectTransform:
   - {fileID: 1480}
   - {fileID: 1556}
   m_Father: {fileID: 1544}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -30871,25 +30644,6 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -193.5, y: -793}
   m_SizeDelta: {x: 291, y: 119}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!224 &1566
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99999285, y: 0.99999285, z: 0.99999285}
-  m_Children: []
-  m_Father: {fileID: 1578}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -263, y: -67}
-  m_SizeDelta: {x: 100, y: 158.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1567
 RectTransform:
@@ -31113,30 +30867,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -451.77002}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!224 &1578
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99999285, y: 0.99999285, z: 0.99999285}
-  m_Children:
-  - {fileID: 1514}
-  - {fileID: 1539}
-  - {fileID: 1550}
-  - {fileID: 1566}
-  - {fileID: 1525}
-  m_Father: {fileID: 1544}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1579
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31212,8 +30942,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -206, y: -98}
-  m_SizeDelta: {x: 482, y: 154}
+  m_AnchoredPosition: {x: -210, y: -98}
+  m_SizeDelta: {x: 389, y: 137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1583
 RectTransform:
@@ -31375,7 +31105,7 @@ RectTransform:
   - {fileID: 1573}
   - {fileID: 1515}
   m_Father: {fileID: 1544}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -32272,56 +32002,6 @@ MonoBehaviour:
   callWhenFinished: 
   from: {x: 125, y: -131, z: 0}
   to: {x: 280, y: -131, z: 0}
-  worldSpace: 0
---- !u!114 &1619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d166255cacf07b4292b8402b3ddefc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  method: 0
-  style: 0
-  animationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  ignoreTimeScale: 1
-  delay: 0
-  duration: 0.5
-  steeperCurves: 0
-  tweenGroup: 0
-  useFixedUpdate: 0
-  onFinished: []
-  eventReceiver: {fileID: 0}
-  callWhenFinished: 
-  from: {x: 0, y: 250, z: 0}
-  to: {x: 0, y: 0, z: 0}
   worldSpace: 0
 --- !u!114 &1620
 MonoBehaviour:
@@ -43867,193 +43547,193 @@ MonoBehaviour:
       mShowGroup: 0
       mUpdateEntryList: 1
       mEntryList:
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: active
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchoredPosition
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchoredPosition3D
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchorMax
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchorMin
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: animationCurve
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: callWhenFinished
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: delay
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: duration
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: enabled
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: eulerAngles
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: eventReceiver
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: forward
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: from
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hasChanged
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hierarchyCapacity
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: ignoreTimeScale
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: isStatic
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: layer
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localEulerAngles
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localPosition
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localRotation
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localScale
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: method
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: offsetMax
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: offsetMin
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: onFinished
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: parent
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: pivot
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: position
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: position
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: right
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: rotation
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: runInEditMode
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: sizeDelta
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: steeperCurves
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: style
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: to
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tweenFactor
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tweenGroup
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: up
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: useFixedUpdate
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: useGUILayout
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: value
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: worldSpace
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: add_reapplyDrivenProperties (RectTransform+ReapplyDrivenProperties value)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: CreatePrimitive (PrimitiveType type)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: DetachChildren ()
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: Find (String name)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: Find (String name)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: FindChild (String name)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindGameObjectsWithTag (String tag)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindGameObjectWithTag (String tag)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindWithTag (String tag)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetChild (Int32 index)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetChildCount ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetEnumerator ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetLocalCorners (Vector3[] fourCornersArray)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetSiblingIndex ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetWorldCorners (Vector3[] fourCornersArray)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: IsChildOf (Transform parent)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: PlayAnimation (Object animation)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: PlayForward ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: PlayReverse ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: remove_reapplyDrivenProperties (RectTransform+ReapplyDrivenProperties
           value)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: RemoveOnFinished (EventDelegate del)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: ResetToBeginning ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: RotateAroundLocal (Vector3 axis, Single angle)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: Sample (Single factor, Boolean isFinished)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SampleAnimation (Object clip, Single time)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SetActive (Boolean value)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SetActiveRecursively (Boolean state)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetAsFirstSibling ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetAsLastSibling ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: SetEndToCurrentValue ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetInsetAndSizeFromParentEdge (RectTransform+Edge edge, Single inset,
           Single size)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetPositionAndRotation (Vector3 position, Quaternion rotation)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetSiblingIndex (Int32 index)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetSizeWithCurrentAnchors (RectTransform+Axis axis, Single size)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: SetStartToCurrentValue ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: StopAllCoroutines ()
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: StopAnimation ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: Toggle ()
-      mTarget: {fileID: 1619}
+      mTarget: {fileID: 0}
       mMethodName: PlayReverse
       mParameters:
       - obj: {fileID: 432}
@@ -78238,193 +77918,193 @@ MonoBehaviour:
       mShowGroup: 0
       mUpdateEntryList: 1
       mEntryList:
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: active
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchoredPosition
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchoredPosition3D
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchorMax
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchorMin
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: animationCurve
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: callWhenFinished
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: delay
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: duration
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: enabled
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: eulerAngles
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: eventReceiver
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: forward
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: from
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hasChanged
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hierarchyCapacity
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: ignoreTimeScale
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: isStatic
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: layer
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localEulerAngles
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localPosition
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localRotation
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localScale
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: method
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: offsetMax
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: offsetMin
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: onFinished
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: parent
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: pivot
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: position
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: position
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: right
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: rotation
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: runInEditMode
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: sizeDelta
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: steeperCurves
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: style
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: to
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tweenFactor
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tweenGroup
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: up
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: useFixedUpdate
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: useGUILayout
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: value
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: worldSpace
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: add_reapplyDrivenProperties (RectTransform+ReapplyDrivenProperties value)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: CreatePrimitive (PrimitiveType type)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: DetachChildren ()
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: Find (String name)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: Find (String name)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: FindChild (String name)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindGameObjectsWithTag (String tag)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindGameObjectWithTag (String tag)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindWithTag (String tag)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetChild (Int32 index)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetChildCount ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetEnumerator ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetLocalCorners (Vector3[] fourCornersArray)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetSiblingIndex ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetWorldCorners (Vector3[] fourCornersArray)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: IsChildOf (Transform parent)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: PlayAnimation (Object animation)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: PlayForward ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: PlayReverse ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: remove_reapplyDrivenProperties (RectTransform+ReapplyDrivenProperties
           value)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: RemoveOnFinished (EventDelegate del)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: ResetToBeginning ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: RotateAroundLocal (Vector3 axis, Single angle)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: Sample (Single factor, Boolean isFinished)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SampleAnimation (Object clip, Single time)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SetActive (Boolean value)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SetActiveRecursively (Boolean state)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetAsFirstSibling ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetAsLastSibling ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: SetEndToCurrentValue ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetInsetAndSizeFromParentEdge (RectTransform+Edge edge, Single inset,
           Single size)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetPositionAndRotation (Vector3 position, Quaternion rotation)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetSiblingIndex (Int32 index)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetSizeWithCurrentAnchors (RectTransform+Axis axis, Single size)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: SetStartToCurrentValue ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: StopAllCoroutines ()
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: StopAnimation ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: Toggle ()
-      mTarget: {fileID: 527}
+      mTarget: {fileID: 0}
       mMethodName: SetActive
       mParameters:
       - obj: {fileID: 432}
@@ -78445,193 +78125,193 @@ MonoBehaviour:
       mShowGroup: 0
       mUpdateEntryList: 1
       mEntryList:
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: active
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchoredPosition
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchoredPosition3D
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchorMax
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchorMin
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: animationCurve
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: callWhenFinished
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: delay
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: duration
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: enabled
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: eulerAngles
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: eventReceiver
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: forward
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: from
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hasChanged
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hierarchyCapacity
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: ignoreTimeScale
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: isStatic
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: layer
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localEulerAngles
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localPosition
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localRotation
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localScale
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: method
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: offsetMax
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: offsetMin
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: onFinished
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: parent
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: pivot
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: position
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: position
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: right
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: rotation
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: runInEditMode
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: sizeDelta
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: steeperCurves
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: style
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: to
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tweenFactor
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tweenGroup
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: up
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: useFixedUpdate
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: useGUILayout
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: value
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: worldSpace
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: add_reapplyDrivenProperties (RectTransform+ReapplyDrivenProperties value)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: CreatePrimitive (PrimitiveType type)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: DetachChildren ()
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: Find (String name)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: Find (String name)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: FindChild (String name)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindGameObjectsWithTag (String tag)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindGameObjectWithTag (String tag)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindWithTag (String tag)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetChild (Int32 index)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetChildCount ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetEnumerator ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetLocalCorners (Vector3[] fourCornersArray)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetSiblingIndex ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetWorldCorners (Vector3[] fourCornersArray)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: IsChildOf (Transform parent)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: PlayAnimation (Object animation)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: PlayForward ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: PlayReverse ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: remove_reapplyDrivenProperties (RectTransform+ReapplyDrivenProperties
           value)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: RemoveOnFinished (EventDelegate del)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: ResetToBeginning ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: RotateAroundLocal (Vector3 axis, Single angle)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: Sample (Single factor, Boolean isFinished)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SampleAnimation (Object clip, Single time)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SetActive (Boolean value)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SetActiveRecursively (Boolean state)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetAsFirstSibling ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetAsLastSibling ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: SetEndToCurrentValue ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetInsetAndSizeFromParentEdge (RectTransform+Edge edge, Single inset,
           Single size)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetPositionAndRotation (Vector3 position, Quaternion rotation)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetSiblingIndex (Int32 index)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetSizeWithCurrentAnchors (RectTransform+Axis axis, Single size)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: SetStartToCurrentValue ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: StopAllCoroutines ()
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: StopAnimation ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: Toggle ()
-      mTarget: {fileID: 1619}
+      mTarget: {fileID: 0}
       mMethodName: ResetToBeginning
       mParameters:
       - obj: {fileID: 432}
@@ -78652,193 +78332,193 @@ MonoBehaviour:
       mShowGroup: 0
       mUpdateEntryList: 1
       mEntryList:
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: active
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchoredPosition
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchoredPosition3D
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchorMax
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchorMin
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: animationCurve
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: callWhenFinished
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: delay
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: duration
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: enabled
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: eulerAngles
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: eventReceiver
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: forward
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: from
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hasChanged
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hierarchyCapacity
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: ignoreTimeScale
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: isStatic
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: layer
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localEulerAngles
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localPosition
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localRotation
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localScale
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: method
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: offsetMax
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: offsetMin
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: onFinished
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: parent
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: pivot
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: position
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: position
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: right
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: rotation
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: runInEditMode
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: sizeDelta
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: steeperCurves
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: style
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: to
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tweenFactor
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tweenGroup
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: up
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: useFixedUpdate
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: useGUILayout
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: value
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: worldSpace
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: add_reapplyDrivenProperties (RectTransform+ReapplyDrivenProperties value)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: CreatePrimitive (PrimitiveType type)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: DetachChildren ()
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: Find (String name)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: Find (String name)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: FindChild (String name)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindGameObjectsWithTag (String tag)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindGameObjectWithTag (String tag)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindWithTag (String tag)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetChild (Int32 index)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetChildCount ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetEnumerator ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetLocalCorners (Vector3[] fourCornersArray)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetSiblingIndex ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetWorldCorners (Vector3[] fourCornersArray)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: IsChildOf (Transform parent)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: PlayAnimation (Object animation)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: PlayForward ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: PlayReverse ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: remove_reapplyDrivenProperties (RectTransform+ReapplyDrivenProperties
           value)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: RemoveOnFinished (EventDelegate del)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: ResetToBeginning ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: RotateAroundLocal (Vector3 axis, Single angle)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: Sample (Single factor, Boolean isFinished)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SampleAnimation (Object clip, Single time)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SetActive (Boolean value)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SetActiveRecursively (Boolean state)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetAsFirstSibling ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetAsLastSibling ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: SetEndToCurrentValue ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetInsetAndSizeFromParentEdge (RectTransform+Edge edge, Single inset,
           Single size)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetPositionAndRotation (Vector3 position, Quaternion rotation)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetSiblingIndex (Int32 index)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetSizeWithCurrentAnchors (RectTransform+Axis axis, Single size)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: SetStartToCurrentValue ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: StopAllCoroutines ()
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: StopAnimation ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: Toggle ()
-      mTarget: {fileID: 1619}
+      mTarget: {fileID: 0}
       mMethodName: PlayForward
       mParameters:
       - obj: {fileID: 432}
@@ -81139,193 +80819,193 @@ MonoBehaviour:
       mShowGroup: 0
       mUpdateEntryList: 1
       mEntryList:
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: active
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchoredPosition
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchoredPosition3D
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchorMax
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchorMin
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: animationCurve
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: callWhenFinished
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: delay
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: duration
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: enabled
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: eulerAngles
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: eventReceiver
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: forward
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: from
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hasChanged
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hierarchyCapacity
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: ignoreTimeScale
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: isStatic
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: layer
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localEulerAngles
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localPosition
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localRotation
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localScale
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: method
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: offsetMax
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: offsetMin
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: onFinished
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: parent
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: pivot
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: position
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: position
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: right
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: rotation
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: runInEditMode
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: sizeDelta
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: steeperCurves
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: style
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: to
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tweenFactor
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tweenGroup
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: up
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: useFixedUpdate
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: useGUILayout
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: value
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: worldSpace
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: add_reapplyDrivenProperties (RectTransform+ReapplyDrivenProperties value)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: CreatePrimitive (PrimitiveType type)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: DetachChildren ()
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: Find (String name)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: Find (String name)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: FindChild (String name)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindGameObjectsWithTag (String tag)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindGameObjectWithTag (String tag)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindWithTag (String tag)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetChild (Int32 index)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetChildCount ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetEnumerator ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetLocalCorners (Vector3[] fourCornersArray)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetSiblingIndex ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetWorldCorners (Vector3[] fourCornersArray)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: IsChildOf (Transform parent)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: PlayAnimation (Object animation)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: PlayForward ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: PlayReverse ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: remove_reapplyDrivenProperties (RectTransform+ReapplyDrivenProperties
           value)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: RemoveOnFinished (EventDelegate del)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: ResetToBeginning ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: RotateAroundLocal (Vector3 axis, Single angle)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: Sample (Single factor, Boolean isFinished)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SampleAnimation (Object clip, Single time)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SetActive (Boolean value)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SetActiveRecursively (Boolean state)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetAsFirstSibling ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetAsLastSibling ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: SetEndToCurrentValue ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetInsetAndSizeFromParentEdge (RectTransform+Edge edge, Single inset,
           Single size)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetPositionAndRotation (Vector3 position, Quaternion rotation)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetSiblingIndex (Int32 index)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetSizeWithCurrentAnchors (RectTransform+Axis axis, Single size)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: SetStartToCurrentValue ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: StopAllCoroutines ()
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: StopAnimation ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: Toggle ()
-      mTarget: {fileID: 1619}
+      mTarget: {fileID: 0}
       mMethodName: PlayReverse
       mParameters:
       - obj: {fileID: 432}
@@ -86290,33 +85970,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300012, guid: 8a1d67ce83b51d84cba5ed25c7ff5a60, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!114 &1702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88757,71 +88410,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &1719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 8.26, y: -5.62}
-  m_UseGraphicAlpha: 1
---- !u!114 &1720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44844f837ad0cc440863f2686bc983e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  topColor:
-    serializedVersion: 2
-    rgba: 4292730333
-  bottomColor:
-    serializedVersion: 2
-    rgba: 4288453788
---- !u!114 &1721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 1498f4a6b3cc6d84f9d5b2034f5c42d0, type: 3}
-    m_FontSize: 33
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 0
-    m_MaxSize: 300
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 0/0
 --- !u!114 &1722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89406,33 +88994,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &1741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300036, guid: 8a1d67ce83b51d84cba5ed25c7ff5a60, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!114 &1742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89719,193 +89280,193 @@ MonoBehaviour:
       mShowGroup: 0
       mUpdateEntryList: 1
       mEntryList:
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: active
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchoredPosition
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchoredPosition3D
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchorMax
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchorMin
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: animationCurve
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: callWhenFinished
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: delay
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: duration
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: enabled
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: eulerAngles
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: eventReceiver
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: forward
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: from
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hasChanged
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hierarchyCapacity
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: ignoreTimeScale
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: isStatic
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: layer
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localEulerAngles
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localPosition
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localRotation
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localScale
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: method
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: offsetMax
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: offsetMin
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: onFinished
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: parent
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: pivot
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: position
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: position
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: right
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: rotation
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: runInEditMode
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: sizeDelta
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: steeperCurves
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: style
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: to
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tweenFactor
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tweenGroup
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: up
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: useFixedUpdate
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: useGUILayout
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: value
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: worldSpace
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: add_reapplyDrivenProperties (RectTransform+ReapplyDrivenProperties value)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: CreatePrimitive (PrimitiveType type)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: DetachChildren ()
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: Find (String name)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: Find (String name)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: FindChild (String name)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindGameObjectsWithTag (String tag)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindGameObjectWithTag (String tag)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindWithTag (String tag)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetChild (Int32 index)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetChildCount ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetEnumerator ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetLocalCorners (Vector3[] fourCornersArray)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetSiblingIndex ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetWorldCorners (Vector3[] fourCornersArray)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: IsChildOf (Transform parent)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: PlayAnimation (Object animation)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: PlayForward ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: PlayReverse ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: remove_reapplyDrivenProperties (RectTransform+ReapplyDrivenProperties
           value)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: RemoveOnFinished (EventDelegate del)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: ResetToBeginning ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: RotateAroundLocal (Vector3 axis, Single angle)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: Sample (Single factor, Boolean isFinished)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SampleAnimation (Object clip, Single time)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SetActive (Boolean value)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SetActiveRecursively (Boolean state)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetAsFirstSibling ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetAsLastSibling ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: SetEndToCurrentValue ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetInsetAndSizeFromParentEdge (RectTransform+Edge edge, Single inset,
           Single size)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetPositionAndRotation (Vector3 position, Quaternion rotation)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetSiblingIndex (Int32 index)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetSizeWithCurrentAnchors (RectTransform+Axis axis, Single size)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: SetStartToCurrentValue ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: StopAllCoroutines ()
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: StopAnimation ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: Toggle ()
-      mTarget: {fileID: 1619}
+      mTarget: {fileID: 0}
       mMethodName: PlayReverse
       mParameters:
       - obj: {fileID: 432}
@@ -95526,193 +95087,193 @@ MonoBehaviour:
       mShowGroup: 0
       mUpdateEntryList: 1
       mEntryList:
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: active
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchoredPosition
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchoredPosition3D
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchorMax
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: anchorMin
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: animationCurve
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: callWhenFinished
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: delay
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: duration
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: enabled
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: eulerAngles
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: eventReceiver
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: forward
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: from
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hasChanged
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: hideFlags
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: hierarchyCapacity
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: ignoreTimeScale
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: isStatic
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: layer
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localEulerAngles
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localPosition
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localRotation
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: localScale
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: method
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: name
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: offsetMax
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: offsetMin
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: onFinished
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: parent
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: pivot
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: position
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: position
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: right
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: rotation
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: runInEditMode
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: sizeDelta
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: steeperCurves
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: style
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: tag
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: to
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tweenFactor
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: tweenGroup
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: up
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: useFixedUpdate
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: useGUILayout
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: value
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: worldSpace
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: add_reapplyDrivenProperties (RectTransform+ReapplyDrivenProperties value)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: CreatePrimitive (PrimitiveType type)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: DetachChildren ()
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: Find (String name)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: Find (String name)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: FindChild (String name)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindGameObjectsWithTag (String tag)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindGameObjectWithTag (String tag)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: FindWithTag (String tag)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetChild (Int32 index)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetChildCount ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetEnumerator ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetLocalCorners (Vector3[] fourCornersArray)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetSiblingIndex ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: GetWorldCorners (Vector3[] fourCornersArray)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: IsChildOf (Transform parent)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: PlayAnimation (Object animation)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: PlayForward ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: PlayReverse ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: remove_reapplyDrivenProperties (RectTransform+ReapplyDrivenProperties
           value)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: RemoveOnFinished (EventDelegate del)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: ResetToBeginning ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: RotateAroundLocal (Vector3 axis, Single angle)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: Sample (Single factor, Boolean isFinished)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SampleAnimation (Object clip, Single time)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SetActive (Boolean value)
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: SetActiveRecursively (Boolean state)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetAsFirstSibling ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetAsLastSibling ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: SetEndToCurrentValue ()
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetInsetAndSizeFromParentEdge (RectTransform+Edge edge, Single inset,
           Single size)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetPositionAndRotation (Vector3 position, Quaternion rotation)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetSiblingIndex (Int32 index)
-      - target: {fileID: 1578}
+      - target: {fileID: 0}
         name: SetSizeWithCurrentAnchors (RectTransform+Axis axis, Single size)
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: SetStartToCurrentValue ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: StopAllCoroutines ()
-      - target: {fileID: 527}
+      - target: {fileID: 0}
         name: StopAnimation ()
-      - target: {fileID: 1619}
+      - target: {fileID: 0}
         name: Toggle ()
-      mTarget: {fileID: 1619}
+      mTarget: {fileID: 0}
       mMethodName: PlayForward
       mParameters:
       - obj: {fileID: 432}
@@ -101003,71 +100564,6 @@ MonoBehaviour:
   executeOnStart: 0
   executeDelay: 0
   returnToState: {fileID: 1688}
---- !u!114 &1754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 8.26, y: -5.62}
-  m_UseGraphicAlpha: 1
---- !u!114 &1755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44844f837ad0cc440863f2686bc983e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  topColor:
-    serializedVersion: 2
-    rgba: 4292730333
-  bottomColor:
-    serializedVersion: 2
-    rgba: 4288453788
---- !u!114 &1756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 1498f4a6b3cc6d84f9d5b2034f5c42d0, type: 3}
-    m_FontSize: 33
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 0
-    m_MaxSize: 300
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 0/0
 --- !u!114 &1757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101748,33 +101244,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 0.69
   m_Text: 000
---- !u!114 &1783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300014, guid: 8a1d67ce83b51d84cba5ed25c7ff5a60, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!114 &1784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111167,7 +110636,7 @@ MonoBehaviour:
   injectedTrackPool: []
   trackObjectPool: []
   golds:
-  - {fileID: 1679167076500096, guid: 74b9382a189c93a46b9a934afddb973b, type: 3}
+  - {fileID: 7928060107324867805, guid: f555d5997e0419349af51af6fc673d43, type: 3}
   - {fileID: 4228650357042394932, guid: a95362d386b960e4498a2e18152a3d29, type: 3}
   - {fileID: 5007328726183309605, guid: c7077c75e9911734995b40ee4d10c3f5, type: 3}
   - {fileID: 5645547737685368497, guid: f2d296404a4ac98489156971db79a9ec, type: 3}
@@ -111189,10 +110658,10 @@ MonoBehaviour:
   - {fileID: 7391961829522380108, guid: d73c7e4fdd57c134c8e296b0a2baee49, type: 3}
   - {fileID: 1397766988776903829, guid: f05575e410e7d3942bd1d720fd4f132d, type: 3}
   obs3:
-  - {fileID: 3493651632804939425, guid: 21cb6b3b6679baa4bbc732f7d3fe182e, type: 3}
-  - {fileID: 3000505160839733280, guid: 62d80282f58b10f46bfec41a3ca1f295, type: 3}
-  - {fileID: 6700782700843500141, guid: 8749c07724df8c644af1d33e09f2126d, type: 3}
-  - {fileID: 763830710132583029, guid: 48f9f2385547bfa4eb7f1e17471cfaac, type: 3}
+  - {fileID: 4100982242216377355, guid: b9cb3b01dac88fc45855897bc588301f, type: 3}
+  - {fileID: 3085258168147101670, guid: 2788c180f3fb38b49acf573a29a3d0df, type: 3}
+  - {fileID: 8128085623197162345, guid: 504b75d148114a846bfc773b69ea4069, type: 3}
+  - {fileID: 3127721546572136885, guid: 363ea0b6405f0e047803b6a1389c7869, type: 3}
   - {fileID: 1240859258254490684, guid: e83c726122df1c94b9c2d8f970521f1f, type: 3}
   - {fileID: 2664029992757079541, guid: 3c0bfb1ec175253438398a65fe8b63b1, type: 3}
   - {fileID: 1015544328562928517, guid: ffe75f4f7bfbaa148a4a3f1ff07a590c, type: 3}
@@ -111200,7 +110669,7 @@ MonoBehaviour:
   - {fileID: 5007328726183309605, guid: c7077c75e9911734995b40ee4d10c3f5, type: 3}
   obs4:
   - {fileID: 6689136731460089128, guid: c5a7df8936d7f7f4392ac8a462d34743, type: 3}
-  - {fileID: 244403370258289877, guid: b78959bb99d9601478d9ae8493d8e77f, type: 3}
+  - {fileID: 5238348551758649221, guid: 5f0d36cabef718948b0881e36d6ea0bb, type: 3}
   - {fileID: 2251233430462502265, guid: b5eec05d6aa352b458c40bf9b21be84b, type: 3}
   - {fileID: 7628330959446079743, guid: 386deaf01da733a4b84dafdd0f64b27d, type: 3}
   - {fileID: 6339113306346853824, guid: 57e62176ecf8b0541ab3bff1f0f28fee, type: 3}
@@ -111209,16 +110678,16 @@ MonoBehaviour:
   - {fileID: 4178329745204390299, guid: e874209c483af9742b8270fc02645848, type: 3}
   obs4b:
   - {fileID: 3801844892850831544, guid: 9b60d6128b292e842a50188d11b63c7f, type: 3}
-  - {fileID: 7202960152712069015, guid: 6ae983f86f825f544a97861768717c3e, type: 3}
+  - {fileID: 4719203704671781383, guid: 12e3b0430de0f6f4b99f1541e71f9d59, type: 3}
   - {fileID: 5953102390674508251, guid: 49c984564097f2c44bcbc23417974abf, type: 3}
   - {fileID: 9061882421650416679, guid: 3a4d37ae09daffc41a1b787ba0d874eb, type: 3}
   - {fileID: 881402243319718990, guid: 807d6bc00da459d45af7e958ca2fac87, type: 3}
   - {fileID: 7998922080147881275, guid: 992521e347b0d10488c447068d3ae004, type: 3}
-  - {fileID: 7121969508601099793, guid: cee5fb692ef8c5c4faf637d8114a9e04, type: 3}
-  - {fileID: 8538087893915903249, guid: 94839962f9510e34cb2419bdc5c34e7f, type: 3}
+  - {fileID: 1212526094303509775, guid: 575e79cc1b421a44a86e388dcc253222, type: 3}
+  - {fileID: 7603375230211231864, guid: 4cd23375f4b55ad4b8739d9ab9f271cc, type: 3}
   obs5:
   - {fileID: 8371670929151443985, guid: f766e59355bb8274b8283be16a870755, type: 3}
-  - {fileID: 1350286925736330608, guid: 45000b1ca79d48a4f8c8929cc8394a8f, type: 3}
+  - {fileID: 5238348551758649221, guid: 5f0d36cabef718948b0881e36d6ea0bb, type: 3}
   - {fileID: 3645546624687065290, guid: f37a1483435b65a4a9940adc4e0f5945, type: 3}
   - {fileID: 173699521881379048, guid: ef86a5e860c09aa43b67903869a3128b, type: 3}
   - {fileID: 8567216077088827993, guid: 2f5e67881242941438b67c02e77509f9, type: 3}
@@ -111250,8 +110719,8 @@ MonoBehaviour:
   - {fileID: 2725005620471200591, guid: c16b7cc41b1eb314da737322264f6b0f, type: 3}
   - {fileID: 1437340872542474340, guid: 5933609ae7f444e4d8a3c0611679ecb7, type: 3}
   - {fileID: 8655364516947207329, guid: 9b7251a99abf5284faba27959588285e, type: 3}
-  - {fileID: 8741949444313337982, guid: 91c676fb6cf0301428cf7232ef17795b, type: 3}
-  - {fileID: 5102943122663866653, guid: 979be211bdc6e5546816969f8ad3cfc0, type: 3}
+  - {fileID: 2669933759042736448, guid: 2f9419c9f07ffe84d9c62d37f0f04339, type: 3}
+  - {fileID: 5455308092186921860, guid: 9c9d6a1cbe2d3aa40a0ff851b748289c, type: 3}
   - {fileID: 8937749225188374324, guid: 46346eb0486a1304e868d6668511c1bb, type: 3}
   - {fileID: 2927721522334316360, guid: 7de372e3e8af74c418d29d3009a17f89, type: 3}
   - {fileID: 2595982606530760017, guid: 51277689b6c5d444d96a81efb0c3e85c, type: 3}
@@ -111317,8 +110786,8 @@ MonoBehaviour:
   letterBoardPanel: {fileID: 570}
   letterBoardTween: {fileID: 1620}
   lblWord: {fileID: 1703}
-  lblCollectedLetterCount: {fileID: 1756}
-  lblCollectedFruitCount: {fileID: 1721}
+  lblCollectedLetterCount: {fileID: 0}
+  lblCollectedFruitCount: {fileID: 0}
   powerupPanel: {fileID: 590}
   powerupPanelTween: {fileID: 1621}
   powerupProgressBar: {fileID: 1696}
@@ -111819,8 +111288,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text1: {fileID: 1942175242}
   text2: {fileID: 1134213214}
-  ADD: {fileID: 588677536}
-  RED: {fileID: 1354824165}
+  ADD: {fileID: 921234811}
+  RED: {fileID: 1522778036}
   level_num: 1
 --- !u!1 &530312177
 GameObject:
@@ -111877,7 +111346,7 @@ MonoBehaviour:
   ADD: {fileID: 1950263070}
   RED: {fileID: 1542934296}
   value_level: 1
---- !u!1 &588677534
+--- !u!1 &679484462
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111885,10 +111354,135 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 588677535}
-  - component: {fileID: 588677538}
-  - component: {fileID: 588677537}
-  - component: {fileID: 588677536}
+  - component: {fileID: 679484463}
+  - component: {fileID: 679484464}
+  m_Layer: 0
+  m_Name: tbr_board
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &679484463
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679484462}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 422.57083, y: -92, z: 0}
+  m_LocalScale: {x: 1.0416667, y: 1.0416667, z: 1.0416667}
+  m_Children:
+  - {fileID: 1536962673}
+  m_Father: {fileID: 1491}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &679484464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679484462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4c8cf38e52cbb46b6de0561c99e74f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text1: {fileID: 1672532143}
+  msg_tbr: 
+  msg_tbr1: 0
+  msg_tbr2: 
+--- !u!1 &770514725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 770514726}
+  - component: {fileID: 770514728}
+  - component: {fileID: 770514727}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &770514726
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770514725}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 921234810}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -7.5}
+  m_SizeDelta: {x: 0, y: 15}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &770514727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770514725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.20392157, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 28
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 100
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: +
+--- !u!222 &770514728
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770514725}
+  m_CullTransparentMesh: 0
+--- !u!1 &921234809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 921234810}
+  - component: {fileID: 921234813}
+  - component: {fileID: 921234812}
+  - component: {fileID: 921234811}
   m_Layer: 5
   m_Name: ADD
   m_TagString: Untagged
@@ -111896,33 +111490,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &588677535
+--- !u!224 &921234810
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 588677534}
+  m_GameObject: {fileID: 921234809}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 589188742}
+  - {fileID: 770514726}
   m_Father: {fileID: 1582205989}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -121, y: -65}
+  m_AnchoredPosition: {x: -118, y: -63}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &588677536
+--- !u!114 &921234811
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 588677534}
+  m_GameObject: {fileID: 921234809}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -111952,17 +111546,17 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 588677537}
+  m_TargetGraphic: {fileID: 921234812}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &588677537
+--- !u!114 &921234812
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 588677534}
+  m_GameObject: {fileID: 921234809}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -111983,15 +111577,15 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!222 &588677538
+--- !u!222 &921234813
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 588677534}
+  m_GameObject: {fileID: 921234809}
   m_CullTransparentMesh: 0
---- !u!1 &589188741
+--- !u!1 &964510908
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111999,9 +111593,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 589188742}
-  - component: {fileID: 589188744}
-  - component: {fileID: 589188743}
+  - component: {fileID: 964510909}
+  - component: {fileID: 964510911}
+  - component: {fileID: 964510910}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -112009,39 +111603,39 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &589188742
+--- !u!224 &964510909
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 589188741}
+  m_GameObject: {fileID: 964510908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 588677535}
+  m_Father: {fileID: 1522778035}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -7.5}
-  m_SizeDelta: {x: 0, y: 15}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &589188743
+--- !u!114 &964510910
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 589188741}
+  m_GameObject: {fileID: 964510908}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.20392157, b: 0.19607843, a: 1}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -112051,22 +111645,22 @@ MonoBehaviour:
     m_FontSize: 28
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 100
+    m_MinSize: 2
+    m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: +
---- !u!222 &589188744
+  m_Text: '-'
+--- !u!222 &964510911
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 589188741}
+  m_GameObject: {fileID: 964510908}
   m_CullTransparentMesh: 0
 --- !u!1 &1062700928
 GameObject:
@@ -112119,8 +111713,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25, y: -22.799957}
-  m_SizeDelta: {x: 226.71338, y: 30}
+  m_AnchoredPosition: {x: -1.9315, y: -22.799957}
+  m_SizeDelta: {x: 272.85034, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1134213214
 MonoBehaviour:
@@ -112239,83 +111833,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265161585}
   m_CullTransparentMesh: 0
---- !u!1 &1289982269
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1289982270}
-  - component: {fileID: 1289982272}
-  - component: {fileID: 1289982271}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1289982270
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289982269}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1354824164}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1289982271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289982269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 28
-    m_FontStyle: 1
-    m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 0
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: '-'
---- !u!222 &1289982272
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289982269}
-  m_CullTransparentMesh: 0
 --- !u!1 &1344349951
 GameObject:
   m_ObjectHideFlags: 0
@@ -112350,7 +111867,11 @@ MonoBehaviour:
   result_num: 0
   num_tar: 0
   tar_times: 0
+  msg: 
+  msg2: 
+  tar_distance: 30
   fireRate: 3
+  levelstring: 
 --- !u!4 &1344349953
 Transform:
   m_ObjectHideFlags: 0
@@ -112365,120 +111886,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1354824163
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1354824164}
-  - component: {fileID: 1354824167}
-  - component: {fileID: 1354824166}
-  - component: {fileID: 1354824165}
-  m_Layer: 5
-  m_Name: RED
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1354824164
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1354824163}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1289982270}
-  m_Father: {fileID: 1582205989}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 274, y: -64}
-  m_SizeDelta: {x: 50, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1354824165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1354824163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1354824166}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1354824166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1354824163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.99295145, b: 0.84313726, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300034, guid: 8a1d67ce83b51d84cba5ed25c7ff5a60, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
---- !u!222 &1354824167
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1354824163}
-  m_CullTransparentMesh: 0
 --- !u!1 &1360929685
 GameObject:
   m_ObjectHideFlags: 0
@@ -112528,6 +111935,193 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1522778034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1522778035}
+  - component: {fileID: 1522778038}
+  - component: {fileID: 1522778037}
+  - component: {fileID: 1522778036}
+  m_Layer: 5
+  m_Name: RED
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1522778035
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522778034}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 964510909}
+  m_Father: {fileID: 1582205989}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 275, y: -62}
+  m_SizeDelta: {x: 50, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1522778036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522778034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1522778037}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1522778037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522778034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.99295145, b: 0.84313726, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300034, guid: 8a1d67ce83b51d84cba5ed25c7ff5a60, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &1522778038
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522778034}
+  m_CullTransparentMesh: 0
+--- !u!1 &1536962672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1536962673}
+  - component: {fileID: 1536962675}
+  - component: {fileID: 1536962674}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1536962673
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536962672}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.96, y: 0.96, z: 0.96}
+  m_Children:
+  - {fileID: 1672532142}
+  m_Father: {fileID: 679484463}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -13.348022, y: 0}
+  m_SizeDelta: {x: 236.90381, y: 64.34555}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1536962674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536962672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300064, guid: 8a1d67ce83b51d84cba5ed25c7ff5a60, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 1
+--- !u!222 &1536962675
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536962672}
+  m_CullTransparentMesh: 0
 --- !u!1 &1542934294
 GameObject:
   m_ObjectHideFlags: 0
@@ -112673,8 +112267,8 @@ RectTransform:
   m_Children:
   - {fileID: 1942175241}
   - {fileID: 1134213213}
-  - {fileID: 588677535}
-  - {fileID: 1354824164}
+  - {fileID: 921234810}
+  - {fileID: 1522778035}
   m_Father: {fileID: 486962350}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -112717,6 +112311,83 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582205988}
+  m_CullTransparentMesh: 0
+--- !u!1 &1672532141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1672532142}
+  - component: {fileID: 1672532144}
+  - component: {fileID: 1672532143}
+  m_Layer: 0
+  m_Name: Text1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1672532142
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672532141}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1536962673}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 19, y: 8.3}
+  m_SizeDelta: {x: 254.52057, y: 29.475716}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1672532143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672532141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.18039216, g: 0.09019608, b: 0.14901961, a: 0.8784314}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "TBR\u503C:"
+--- !u!222 &1672532144
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672532141}
   m_CullTransparentMesh: 0
 --- !u!1 &1942175240
 GameObject:

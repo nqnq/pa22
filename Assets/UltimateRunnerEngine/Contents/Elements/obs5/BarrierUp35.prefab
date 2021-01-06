@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 1388385178478784922}
   - component: {fileID: 5734229601169607753}
   m_Layer: 0
-  m_Name: BarrierUp3 4
+  m_Name: BarrierUp35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -235,5 +235,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 1.5}
+  m_Size: {x: 5, y: 2, z: 12}
   m_Center: {x: 0, y: 1, z: 0}

@@ -296,9 +296,9 @@ public class Controller : MonoBehaviour {
     private float verticalSpeed_jumpTolerance = -30f;
     private float verticalFallSpeedLimit = -1f;
     [HideInInspector]
-    public float gravity = 100f;
+    public float gravity = 2f;
     [HideInInspector]
-    public float jumpHeight = 10f;
+    public float jumpHeight = 1000f;
 
   
     public void doJump()
@@ -326,7 +326,7 @@ public class Controller : MonoBehaviour {
 
     public float CalculateJumpVerticalSpeed(float jumpHeight)
     {
-        return Mathf.Sqrt((2f * jumpHeight) * this.gravity);
+        return Mathf.Sqrt((2f * jumpHeight*this.gravity)); //*this.gravity
     }
 
     private bool getTransitionFromHeight()
@@ -338,6 +338,7 @@ public class Controller : MonoBehaviour {
 
         return false;
     }
+
 
     public float JumpLength()
     {
@@ -423,8 +424,8 @@ public class Controller : MonoBehaviour {
 
         }
       
-
     }
+
 
     IEnumerator rollDisabler()
     {
@@ -749,13 +750,13 @@ public class Controller : MonoBehaviour {
     // SPEED ---------------------------------------------------------------------------------------------
     public class Acceleration
     {
-        public float start = 35;
-        public float end = 80;
+        public float start = 30;
+        public float end = 65;
         public float accelerationTime = 200;
     }
 
     // 速度
-    public float currentLevelSpeed=35;
+    public float currentLevelSpeed=20;
 
     public Acceleration speed = new Acceleration();
 
@@ -1006,8 +1007,8 @@ public class Controller : MonoBehaviour {
 
                 //Debug.Log(trackMovementLast);
                 //Debug.Log(collider.name);
-                PowerupController.instance.SetGolds(-1);
-                currentLevelSpeed=35;
+                PowerupController.instance.SetGolds(-2);
+                currentLevelSpeed=30;
                
                
 

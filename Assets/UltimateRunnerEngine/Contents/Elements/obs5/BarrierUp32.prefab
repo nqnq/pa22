@@ -174,7 +174,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 1.5}
+  m_Size: {x: 5, y: 2, z: 12}
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &4919834526493229451
 GameObject:
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 2439801840236283132}
   - component: {fileID: 9010420130193832239}
   m_Layer: 0
-  m_Name: BarrierUp3 1
+  m_Name: BarrierUp32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -423,5 +423,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 1.5}
+  m_Size: {x: 5, y: 2, z: 12}
   m_Center: {x: 0, y: 1, z: 0}

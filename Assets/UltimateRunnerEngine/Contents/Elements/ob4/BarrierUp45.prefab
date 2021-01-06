@@ -42,7 +42,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 1.5}
+  m_Size: {x: 6.5, y: 1, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &2403075310999149632
 GameObject:
@@ -239,7 +239,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 1.5}
+  m_Size: {x: 6.5, y: 1, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &6339113306346853824
 GameObject:
@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 7959710608892123778}
   - component: {fileID: 3987697543632736131}
   m_Layer: 0
-  m_Name: BarrierUp32
+  m_Name: BarrierUp45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -335,7 +335,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 1.5}
+  m_Size: {x: 6.5, y: 1, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!1001 &1934416726664103122
 PrefabInstance:

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2128328206123926035}
   - component: {fileID: 3253467647776466223}
   m_Layer: 0
-  m_Name: BarrierUp2 (4)
+  m_Name: BarrierUp25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7081504722652879629}
   - {fileID: 5041078630150084240}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -93,73 +92,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 1.5}
+  m_Size: {x: 6, y: 2, z: 3}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!1 &4041476874677423990
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7081504722652879629}
-  - component: {fileID: 5778397604051817571}
-  - component: {fileID: 4338869787887848194}
-  m_Layer: 0
-  m_Name: lemon1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7081504722652879629
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4041476874677423990}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.5, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4903780424566124946}
-  m_Father: {fileID: 2128328206123926035}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5778397604051817571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4041476874677423990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cdeeb19a304b08479b3e69eb5ca436e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: currency
-  positioned: 0
-  objectGroup: 0
-  objectType: 1
-  placeHolder: 1
-  disableShuffle: 0
---- !u!114 &4338869787887848194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4041476874677423990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b17aaf7d76ac74944a45134c58d4d02c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioPitch: 0
-  color: 
 --- !u!1 &5955647501226198225
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,7 +126,7 @@ Transform:
   - {fileID: 8049371626461812816}
   - {fileID: 8070488068072814390}
   m_Father: {fileID: 2128328206123926035}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8486478329815416927
 MonoBehaviour:
@@ -226,50 +160,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioPitch: 0
   color: 
---- !u!1 &7200775325425577815
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4903780424566124946}
-  - component: {fileID: 1370815381661778433}
-  m_Layer: 0
-  m_Name: trigger
-  m_TagString: powerup
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4903780424566124946
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7200775325425577815}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 7081504722652879629}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1370815381661778433
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7200775325425577815}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 1.5}
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1001 &8049371626461676240
 PrefabInstance:
   m_ObjectHideFlags: 0

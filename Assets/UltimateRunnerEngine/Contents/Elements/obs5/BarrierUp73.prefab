@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7377132192407031384}
   - component: {fileID: 3094515775287130790}
   m_Layer: 0
-  m_Name: BarrierUp7 2
+  m_Name: BarrierUp73
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,7 +93,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 1.5}
+  m_Size: {x: 6.5, y: 1, z: 3}
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &5695351055428403567
 GameObject:
@@ -269,7 +269,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 1.5}
+  m_Size: {x: 6.5, y: 1, z: 3}
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!1001 &6599008253578047126
 PrefabInstance:

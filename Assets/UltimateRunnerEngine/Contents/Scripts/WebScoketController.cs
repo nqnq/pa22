@@ -47,6 +47,11 @@ public class WebScoketController : MonoBehaviour
     public int result_num=0;
     public int  num_tar=0;
     public int tar_times=0;
+
+    public string msg;
+    public string msg2;
+    //public string msg3;
+    public int tar_distance=50;
     System.Random r = new System.Random();
     void Awake()
     {
@@ -101,16 +106,21 @@ public class WebScoketController : MonoBehaviour
     }
 
 
-    void OnMessageReceived(WebSocket ws, string msg)
+    void OnMessageReceived(WebSocket ws, string msg_rv)
 
     {    
         //var GlobalConstants=new GlobalConstants();
-         Debug.Log(msg);
+         string []msg_arr=msg_rv.Split(',');
+         msg=msg_arr[0];
+         msg2=msg_arr[1];
+        // msg3=msg_arr[2];
+         Debug.Log(msg_rv);
+
         //Debug.Log(tar_times*10000);
         //Debug.Log(level.instance.value_level);
+         //myboard.instance.level_num=int.Parse(msg3);
 
         //游戏难度一
-    
         if (myboard.instance.level_num==1)
         {
             if (msg == "01")
@@ -133,14 +143,14 @@ public class WebScoketController : MonoBehaviour
          if (msg == "04"||msg == "05")
          {
             result_num=result_num+1;
-            TrackGenerator.instance.SetGold(GlodType.Blue, 50, 1.5f);
+            TrackGenerator.instance.SetGold(GlodType.Blue, tar_distance, 1.5f);
             TrackGenerator.instance.SetGold(GlodType.ob, 120, 5f);    
 		 }
 
           if (msg == "06")
          {
             result_num=result_num+1;
-            TrackGenerator.instance.SetGold(GlodType.Yellow, 50, 1.5f);
+            TrackGenerator.instance.SetGold(GlodType.Yellow, tar_distance, 1.5f);
             TrackGenerator.instance.SetGold(GlodType.ob, 120, 5f);
 		 }
          if (msg == "07")
@@ -150,32 +160,32 @@ public class WebScoketController : MonoBehaviour
          }
          else if(msg == "11")
          {
-            speedtemp=35;
+            speedtemp=30;
          }
 
          else if(msg == "12") 
          {
-            speedtemp=38;
+            speedtemp=30;
          }
 
          else if(msg == "13") 
          {
-            speedtemp=40;
+            speedtemp=30;
          }
 
          else if(msg == "14") 
          {
-            speedtemp =43;
+            speedtemp =35;
          }
 
          else if(msg == "15") 
          {
-            speedtemp=45;
+            speedtemp=40;
          }
 
          else if(msg == "16") 
          {
-            speedtemp=48;
+            speedtemp=45;
          }
          else if(msg == "17") 
          {
@@ -183,15 +193,15 @@ public class WebScoketController : MonoBehaviour
          }
          else if(msg == "18") 
          {
-            speedtemp =53;
+            speedtemp =55;
          }
          else if(msg == "19") 
          {
-            speedtemp =56;
+            speedtemp =60;
          }
          else if(msg == "20") 
          { 
-           speedtemp = 60;
+           speedtemp = 65;
          }
          else if (msg == "10") 
          {
@@ -224,31 +234,31 @@ public class WebScoketController : MonoBehaviour
             if (msg == "01")
            {
             result_num=result_num+1;
-            TrackGenerator.instance.SetGold(GlodType.Yellow, 50, 1.5f);       
+            TrackGenerator.instance.SetGold(GlodType.Yellow, tar_distance, 1.5f);       
 		   }
            if (msg == "02")
           {
             result_num=result_num+1;
-			TrackGenerator.instance.SetGold(GlodType.Blue, 50, 1.5f);
+			TrackGenerator.instance.SetGold(GlodType.Blue, tar_distance, 1.5f);
 		  }
 
           if (msg == "03")
           {
             result_num=result_num+1;
-			   TrackGenerator.instance.SetGold(GlodType.Red, 50, 1.5f);
+			   TrackGenerator.instance.SetGold(GlodType.Red, tar_distance, 1.5f);
 		   }
 
          if (msg == "04"||msg == "05")
          {
             result_num=result_num+1;
-            TrackGenerator.instance.SetGold(GlodType.Yellow, 50, 1.5f);
+            TrackGenerator.instance.SetGold(GlodType.Yellow, tar_distance, 1.5f);
             TrackGenerator.instance.SetGold(GlodType.ob, 120, 5f);    
 		 }
 
           if (msg == "06")
          {
             result_num=result_num+1;
-			   TrackGenerator.instance.SetGold(GlodType.Red, 50, 1.5f);
+			   TrackGenerator.instance.SetGold(GlodType.Red, tar_distance, 1.5f);
             TrackGenerator.instance.SetGold(GlodType.ob, 120, 5f);
 		 }
          if (msg == "07")
@@ -258,40 +268,40 @@ public class WebScoketController : MonoBehaviour
          }
          else if(msg == "11")
          {
-            speedtemp=40;
+            speedtemp=30;
          }
 
          else if(msg == "12") 
          {
-            speedtemp=42;
+            speedtemp=30;
          }
 
          else if(msg == "13") 
          {
-            speedtemp=45;
+            speedtemp=30;
          }
 
          else if(msg == "14") 
          {
-            speedtemp =48;
+            speedtemp =35;
          }
 
          else if(msg == "15") 
          {
-            speedtemp =50;
+            speedtemp =40;
          }
 
          else if(msg == "16") 
          {
-            speedtemp=53;
+            speedtemp=45;
          }
          else if(msg == "17") 
          {
-            speedtemp=55;
+            speedtemp=50;
          }
          else if(msg == "18") 
          {
-            speedtemp=58;
+            speedtemp=55;
          }
          else if(msg == "19") 
          {
@@ -332,31 +342,31 @@ public class WebScoketController : MonoBehaviour
             if (msg == "01")
            {
             result_num=result_num+1;
-            TrackGenerator.instance.SetGold2(GlodType.Yellow, 50, 1.5f);       
+            TrackGenerator.instance.SetGold2(GlodType.Yellow, tar_distance, 1.5f);       
 		    }
            if (msg == "02")
           {
             result_num=result_num+1;
-			   TrackGenerator.instance.SetGold2(GlodType.Blue, 50, 1.5f);
+			   TrackGenerator.instance.SetGold2(GlodType.Blue, tar_distance, 1.5f);
 		    }
 
           if (msg == "03")
           {
             result_num=result_num+1;
-			   TrackGenerator.instance.SetGold2(GlodType.Red, 50, 1.5f);
+			   TrackGenerator.instance.SetGold2(GlodType.Red, tar_distance, 1.5f);
 		    }
 
          if (msg == "04"||msg == "05")
          {
             result_num=result_num+1;
-            TrackGenerator.instance.SetGold2(GlodType.Yellow, 50, 1.5f);
+            TrackGenerator.instance.SetGold2(GlodType.Yellow, tar_distance, 1.5f);
             TrackGenerator.instance.SetGold2(GlodType.ob, 120, 5f);    
 		    }
 
           if (msg == "06")
          {
             result_num=result_num+1;
-			   TrackGenerator.instance.SetGold2(GlodType.Red, 50, 1.5f);
+			   TrackGenerator.instance.SetGold2(GlodType.Red, tar_distance, 1.5f);
             TrackGenerator.instance.SetGold2(GlodType.ob, 120, 5f);
 		    }
          if (msg == "07")
@@ -366,48 +376,48 @@ public class WebScoketController : MonoBehaviour
          }
          else if(msg == "11")
          {
-            speedtemp=45;
+            speedtemp=30;
          }
 
          else if(msg == "12") 
          {
-            speedtemp=48;
+            speedtemp=30;
          }
 
          else if(msg == "13") 
          {
-            speedtemp=50;
+            speedtemp=30;
          }
 
          else if(msg == "14") 
          {
-            speedtemp =53;
+            speedtemp =35;
          }
 
          else if(msg == "15") 
          {
-            speedtemp =56;
+            speedtemp =40;
          }
 
          else if(msg == "16") 
          {
-            speedtemp = 58;
+            speedtemp = 45;
          }
          else if(msg == "17") 
          {
-            speedtemp = 60;
+            speedtemp = 50;
          }
          else if(msg == "18") 
          {
-            speedtemp =62;
+            speedtemp =55;
          }
          else if(msg == "19") 
          {
-            speedtemp = 65;
+            speedtemp = 60;
          }
          else if(msg == "20") 
          { 
-           speedtemp = 70;
+           speedtemp = 65;
          }
          else if (msg == "10") 
          {
@@ -441,12 +451,12 @@ public class WebScoketController : MonoBehaviour
            {
              
              result_num=result_num+1;
-             TrackGenerator.instance.SetGold3(GlodType.Yellow, 50, 1.5f,num_tar);       
+             TrackGenerator.instance.SetGold3(GlodType.Yellow, tar_distance, 1.5f,num_tar);       
 		    }
            if (msg == "02")
           {
             result_num=result_num+1;
-			   TrackGenerator.instance.SetGold3(GlodType.Blue, 50, 1.5f,num_tar);
+			   TrackGenerator.instance.SetGold3(GlodType.Blue, tar_distance, 1.5f,num_tar);
 		    }
 
           if (msg == "03")
@@ -462,7 +472,7 @@ public class WebScoketController : MonoBehaviour
             if (clock_tar==0)
             {
               result_num=result_num+1;
-			     TrackGenerator.instance.SetGold3(GlodType.Red, 50, 1.5f,num_tar);
+			     TrackGenerator.instance.SetGold3(GlodType.Red, tar_distance, 1.5f,num_tar);
               TrackGenerator.instance.SetGold3(GlodType.ob, 120, 5f,num_tar);
               tar_times+=1;
               clock_tar=0;
@@ -471,7 +481,7 @@ public class WebScoketController : MonoBehaviour
             else if(clock_tar==1)
             {
               result_num=result_num+1;
-			     TrackGenerator.instance.SetGold3(GlodType.Yellow, 50, 1.5f,num_tar);
+			     TrackGenerator.instance.SetGold3(GlodType.Yellow, tar_distance, 1.5f,num_tar);
               TrackGenerator.instance.SetGold3(GlodType.ob, 120, 5f,num_tar);
               tar_times+=1;
               clock_tar=0;
@@ -482,7 +492,7 @@ public class WebScoketController : MonoBehaviour
          if (msg == "04"||msg == "05")
          {
             result_num=result_num+1;
-            TrackGenerator.instance.SetGold3(GlodType.Yellow, 50, 1.5f, num_tar);
+            TrackGenerator.instance.SetGold3(GlodType.Yellow,tar_distance, 1.5f, num_tar);
             TrackGenerator.instance.SetGold3(GlodType.ob, 120, 5f, num_tar);    
 		  }
 
@@ -500,7 +510,7 @@ public class WebScoketController : MonoBehaviour
             if (clock_tar==0)
             {
               result_num=result_num+1;
-			     TrackGenerator.instance.SetGold3(GlodType.Red, 50, 1.5f,num_tar);
+			     TrackGenerator.instance.SetGold3(GlodType.Red, tar_distance, 1.5f,num_tar);
               TrackGenerator.instance.SetGold3(GlodType.ob, 120, 5f,num_tar);
               tar_times+=1;
               clock_tar=0;
@@ -509,7 +519,7 @@ public class WebScoketController : MonoBehaviour
             else if(clock_tar==1)
             {
               result_num=result_num+1;
-			     TrackGenerator.instance.SetGold3(GlodType.Yellow, 50, 1.5f,num_tar);
+			     TrackGenerator.instance.SetGold3(GlodType.Yellow, tar_distance, 1.5f,num_tar);
               TrackGenerator.instance.SetGold3(GlodType.ob, 120, 5f,num_tar);
               tar_times+=1;
               clock_tar=0;
@@ -523,48 +533,48 @@ public class WebScoketController : MonoBehaviour
          }
          else if(msg == "11")
          {
-            speedtemp=50;
+            speedtemp=30;
          }
 
          else if(msg == "12") 
          {
-            speedtemp=52;
+            speedtemp=30;
          }
 
          else if(msg == "13") 
          {
-            speedtemp=55;
+            speedtemp=30;
          }
 
          else if(msg == "14") 
          {
-            speedtemp =58;
+            speedtemp =35;
          }
 
          else if(msg == "15") 
          {
-            speedtemp =60;
+            speedtemp =40;
          }
 
          else if(msg == "16") 
          {
-            speedtemp = 62;
+            speedtemp = 45;
          }
          else if(msg == "17") 
          {
-            speedtemp = 65;
+            speedtemp = 50;
          }
          else if(msg == "18") 
          {
-            speedtemp =68;
+            speedtemp =55;
          }
          else if(msg == "19") 
          {
-            speedtemp = 70;
+            speedtemp = 60;
          }
          else if(msg == "20") 
          { 
-           speedtemp = 75;
+           speedtemp = 65;
          }
          else if (msg == "10") 
          {
@@ -598,12 +608,12 @@ public class WebScoketController : MonoBehaviour
            {
              
              result_num=result_num+1;
-             TrackGenerator.instance.SetGold4(GlodType.Yellow, 50, 1.5f,num_tar);       
+             TrackGenerator.instance.SetGold4(GlodType.Yellow, tar_distance, 1.5f,num_tar);       
 		     }
            if (msg == "02")
           {
             result_num=result_num+1;
-			   TrackGenerator.instance.SetGold4(GlodType.Blue, 50, 1.5f,num_tar);
+			   TrackGenerator.instance.SetGold4(GlodType.Blue, tar_distance, 1.5f,num_tar);
 		    }  
 
           if (msg == "03")
@@ -619,7 +629,7 @@ public class WebScoketController : MonoBehaviour
             if (clock_tar==0)
             {
               result_num=result_num+1;
-			     TrackGenerator.instance.SetGold4(GlodType.Red, 50, 1.5f,num_tar);
+			     TrackGenerator.instance.SetGold4(GlodType.Red, tar_distance, 1.5f,num_tar);
               TrackGenerator.instance.SetGold4(GlodType.ob, 120, 5f,num_tar);
               tar_times+=1;
               clock_tar=0;
@@ -628,7 +638,7 @@ public class WebScoketController : MonoBehaviour
             else if(clock_tar==1)
             {
               result_num=result_num+1;
-			     TrackGenerator.instance.SetGold4(GlodType.Yellow, 50, 1.5f,num_tar);
+			     TrackGenerator.instance.SetGold4(GlodType.Yellow, tar_distance, 1.5f,num_tar);
               TrackGenerator.instance.SetGold4(GlodType.ob, 120, 5f,num_tar);
               tar_times+=1;
               clock_tar=0;
@@ -639,7 +649,7 @@ public class WebScoketController : MonoBehaviour
          if (msg == "04"||msg == "05")
          {
             result_num=result_num+1;
-            TrackGenerator.instance.SetGold4(GlodType.Yellow, 50, 1.5f, num_tar);
+            TrackGenerator.instance.SetGold4(GlodType.Yellow, tar_distance, 1.5f, num_tar);
             TrackGenerator.instance.SetGold4(GlodType.ob, 120, 5f, num_tar);    
 		   }
 
@@ -655,7 +665,7 @@ public class WebScoketController : MonoBehaviour
             if (clock_tar==0)
             {
               result_num=result_num+1;
-			     TrackGenerator.instance.SetGold4(GlodType.Red, 50, 1.5f,num_tar);
+			     TrackGenerator.instance.SetGold4(GlodType.Red, tar_distance, 1.5f,num_tar);
               TrackGenerator.instance.SetGold4(GlodType.ob, 120, 5f,num_tar);
               tar_times+=1;
               clock_tar=0;
@@ -664,7 +674,7 @@ public class WebScoketController : MonoBehaviour
             else if(clock_tar==1)
             {
               result_num=result_num+1;
-			     TrackGenerator.instance.SetGold4(GlodType.Yellow, 50, 1.5f,num_tar);
+			     TrackGenerator.instance.SetGold4(GlodType.Yellow, tar_distance, 1.5f,num_tar);
               TrackGenerator.instance.SetGold4(GlodType.ob, 120, 5f,num_tar);
               tar_times+=1;
               clock_tar=0;
@@ -678,48 +688,48 @@ public class WebScoketController : MonoBehaviour
           }
           else if(msg == "11")
           {
-            speedtemp=55;
+            speedtemp=30;
           }
 
           else if(msg == "12") 
           {
-            speedtemp=58;
+            speedtemp=30;
           }
 
           else if(msg == "13") 
           {
-            speedtemp=60;
+            speedtemp=30;
           }
 
           else if(msg == "14") 
           {
-            speedtemp =62;
+            speedtemp =35;
           }
 
           else if(msg == "15") 
           {
-            speedtemp =65;
+            speedtemp =40;
           }
 
           else if(msg == "16") 
           {
-            speedtemp = 68;
+            speedtemp = 45;
           }
           else if(msg == "17") 
           {
-            speedtemp = 70;
+            speedtemp = 50;
           }
           else if(msg == "18") 
           {
-            speedtemp =73;
+            speedtemp =55;
           }
           else if(msg == "19") 
           {
-            speedtemp = 80;
+            speedtemp = 60;
           }
           else if(msg == "20") 
           { 
-           speedtemp = 85;
+           speedtemp = 65;
           }
           else if (msg == "10") 
           {
@@ -743,6 +753,7 @@ public class WebScoketController : MonoBehaviour
          //     //     item.SetObstruct(-6.5f, 100f);
          //     // }
          // }
+           
         }
 
     }
@@ -751,8 +762,11 @@ public class WebScoketController : MonoBehaviour
     public float fireRate=0.3F;
     private float nextFire=0.0F;
     public  string levelstring;
+
+    public int clock_tbr=1;
     void Update() 
     {
+        //speedtemp=65;
         Controller.instance.currentLevelSpeed = Mathf.Lerp(Controller.instance.currentLevelSpeed, speedtemp, Time.deltaTime);
         levelstring=level.instance.value_level.ToString()+","+myboard.instance.level_num.ToString(); 
         //Debug.Log(levelstring);
@@ -761,8 +775,64 @@ public class WebScoketController : MonoBehaviour
             nextFire = Time.time + fireRate;
             if(webSocket != null)
                 webSocket.Send(levelstring);  //发送专注度难度
-                //Debug.Log("fasong:" + nextFire.ToString());     
+                //Debug.Log("fasong:" + levelstring);     
         }
+
+
+        if (GameGlobals.Instance.achievements.currentCoins>=0 && GameGlobals.Instance.achievements.currentCoins<15)
+        {
+           myboard.instance.level_num=1;  
+        }
+
+        if (GameGlobals.Instance.achievements.currentCoins>=15 && GameGlobals.Instance.achievements.currentCoins<30)
+        {
+           myboard.instance.level_num=2;  
+        }
+
+        else if (GameGlobals.Instance.achievements.currentCoins>=30 && GameGlobals.Instance.achievements.currentCoins<45)
+        {
+           myboard.instance.level_num=3; 
+
+        }
+
+        else if (GameGlobals.Instance.achievements.currentCoins>=45 && GameGlobals.Instance.achievements.currentCoins<70)
+        {
+           myboard.instance.level_num=4;
+        }
+
+        else if (GameGlobals.Instance.achievements.currentCoins>=70)
+        {
+           myboard.instance.level_num=5; 
+        }
+
+
+       if(clock_tbr==0 && GameGlobals.Instance.achievements.currentCoins>=15)
+       {
+         if (tbr_board.instance.avg_tbr>=10.0 && tbr_board.instance.avg_tbr<30.0)
+         {
+          GameGlobals.Instance.achievements.currentCoins=GameGlobals.Instance.achievements.currentCoins-1;  
+          clock_tbr=1;
+         }
+
+         else if(tbr_board.instance.avg_tbr>=30.0 && tbr_board.instance.avg_tbr<50.0)
+         {
+          GameGlobals.Instance.achievements.currentCoins=GameGlobals.Instance.achievements.currentCoins-2;
+          clock_tbr=1;
+         }
+
+         else if(tbr_board.instance.avg_tbr>=50.0 && tbr_board.instance.avg_tbr<70.0)
+         {
+          GameGlobals.Instance.achievements.currentCoins=GameGlobals.Instance.achievements.currentCoins-3;
+          clock_tbr=1;    
+         }
+ 
+         else if(tbr_board.instance.avg_tbr>=70.0)
+         {
+          GameGlobals.Instance.achievements.currentCoins=GameGlobals.Instance.achievements.currentCoins-4;  
+          clock_tbr=1;
+         }
+
+       }
 
     }
     

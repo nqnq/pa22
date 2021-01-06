@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6238808543903214}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5809161050079210930}
@@ -42,7 +42,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 1.5}
+  m_Size: {x: 6.5, y: 1, z: 4}
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &3111885265356067232
 GameObject:
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 5589666602622202385}
   - component: {fileID: 8282939894052499440}
   m_Layer: 0
-  m_Name: BarrierUp5 3
+  m_Name: BarrierUp54
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
