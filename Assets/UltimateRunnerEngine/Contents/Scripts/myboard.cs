@@ -9,8 +9,8 @@ public class myboard : MonoBehaviour
     public static myboard instance;
     public Text text1;
     public Text text2;
-    //public Button ADD;
-    //public Button RED;
+    public Button ADD;
+    public Button RED;
 
     public int level_num=1;
     void Start()
@@ -18,8 +18,8 @@ public class myboard : MonoBehaviour
       instance = this;
       text1.text="难度一: 障碍物识别";
       text2.text="目标: 障碍物"; 
-      //ADD.onClick.AddListener(AddFunction2);
-      //RED.onClick.AddListener(RedFunction2);
+      ADD.onClick.AddListener(AddFunction2);
+      RED.onClick.AddListener(RedFunction2);
     }
 
     // Update is called once per frame

@@ -154,7 +154,7 @@ public class TrackGenerator : MonoBehaviour
     {
         GameObject player = GameObject.Find("Player");
 
-        Vector3 newpos = new Vector3(0, 0.3590007f, player.transform.position.z + z);
+        Vector3 newpos = new Vector3(0, 0, player.transform.position.z + z);
         //Vector3 newpos2 = new Vector3(0, 0.3590007f, player.transform.position.z + z);
         if (type == GlodType.Red)
         {

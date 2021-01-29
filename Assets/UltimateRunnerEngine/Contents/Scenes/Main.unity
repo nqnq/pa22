@@ -111392,8 +111392,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text1: {fileID: 1672532143}
   msg_tbr: 
-  msg_tbr1: 0
-  msg_tbr2: 
 --- !u!1 &770514725
 GameObject:
   m_ObjectHideFlags: 0

@@ -813,6 +813,8 @@ public class Controller : MonoBehaviour {
 
     private void playVillainAnimation(string animName)
     {
+        //villain1Animator.Play(animName, 0, 0);
+        //villain2Animator.Play(animName, 0, 0);
 
         if (CriticalModeController.Instance.currentState == CriticalModeController.CriticalModeState.onEnter)
         {
@@ -1010,7 +1012,9 @@ public class Controller : MonoBehaviour {
                 PowerupController.instance.SetGolds(-2);
                 currentLevelSpeed=30;
                
-               
+                GameGlobals.Instance.cameraController.Shake();
+                playVillainAnimation("run");
+                //doPlayerRun();
 
                 if (collidedObject.name.IndexOf("Green") != -1 && collidedObject != null)
                 {
@@ -1042,13 +1046,14 @@ public class Controller : MonoBehaviour {
                     lane = 0;
                 }
 
-                bool flag = (lane == 0) || (trackMovementLast == lane);
-		        bool flag2 = characterCollider.bounds.center.z < collider.bounds.min.z;
-                bool flag3 = ((tz == HitLocation.Before) && !flag2) && flag;
+                bool flag=(lane == 0) || (trackMovementLast == lane);
+		        bool flag2=characterCollider.bounds.center.z < collider.bounds.min.z;
+                bool flag3=((tz == HitLocation.Before) && !flag2) && flag;
 
-               // Debug.Log(collider.name + " - flag:" + flag + " flag2:" + flag2 + " flag3:" + flag3);
-
+                // Debug.Log(collider.name + " - flag:" + flag + " flag2:" + flag2 + " flag3:" + flag3);
+                
                 // Train Crash
+                
                 if (collider.name.Equals("movingMesh") && flag == true && flag2 == false && flag3 == true)
                 {
                     this.DoStumble(collidedObject, StumbleLocation.FrontMiddle);
@@ -1062,7 +1067,7 @@ public class Controller : MonoBehaviour {
                     if (trackMovementLast != 0)
                     {
                         // Lane Fix
-                        doChangeLane(-trackMovementLast, laneChangeTime);
+                        // doChangeLane(-trackMovementLast, laneChangeTime);
                     }
 
 			        switch (tx)
@@ -1077,7 +1082,7 @@ public class Controller : MonoBehaviour {
                         case HitLocation.Right: 
 
                         //Debug.Log(collider.name + " Right Side");
-                        this.DoStumble(collidedObject, StumbleLocation.RightSide);
+                           this.DoStumble(collidedObject, StumbleLocation.RightSide);
 				        break;
 			        }
 
@@ -1091,17 +1096,20 @@ public class Controller : MonoBehaviour {
 				        {
                             //Debug.Log(collider.name + " Front Lower");
                             this.DoStumble(collidedObject, StumbleLocation.FrontLower);
+
 				        }
                         else if (ty == HitLocation.YMiddle)
 				        {
                             //Debug.Log(collider.name + " Front Middle");
                             this.DoStumble(collidedObject, StumbleLocation.FrontMiddle);
 
+
 				        }
                         else if (ty == HitLocation.Upper)
 				        {
                             //Debug.Log(collider.name + " Front Upper");
                             this.DoStumble(collidedObject, StumbleLocation.FrontUpper);
+
 				        }
 			        }
 		        }
@@ -1186,10 +1194,11 @@ public class Controller : MonoBehaviour {
         tutorialLastZ = 0;
 
         playerAnimator.Play("run", 0, 0);
-        GameGlobals.Instance.audioController.playSound("PlayerFootSteps", false);
-    
+        GameGlobals.Instance.audioController.playSound("PlayerFootSteps", false); 
 
     }
+
+
 
     public void doPlayerRun()
     {
@@ -1208,10 +1217,10 @@ public class Controller : MonoBehaviour {
         if (GameGlobals.Instance.isInGamePlay() == false) return;
 
         // Tutorial Handler ------------------------->
-
+        //GameGlobals.Instance.cameraController.Shake();
         if (PlayerPrefs.GetInt("tutorial", 0) == 0)
         {
-
+           
             tutorialLastZ = player.transform.position.z;
        
             doAnEffect(EffetcType.DeathPuff);
