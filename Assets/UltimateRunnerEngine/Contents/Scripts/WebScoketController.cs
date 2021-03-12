@@ -115,7 +115,7 @@ public class WebScoketController : MonoBehaviour
          msg=msg_arr[0];
          msg2=msg_arr[1];
         // msg3=msg_arr[2];
-        // Debug.Log(msg_rv);
+         Debug.Log(msg_rv);
 
         //Debug.Log(tar_times*10000);
         //Debug.Log(level.instance.value_level);
@@ -125,7 +125,7 @@ public class WebScoketController : MonoBehaviour
         if (myboard.instance.level_num==1)
         {
             if (msg == "01")
-           {
+         {
             result_num=result_num+1;
             TrackGenerator.instance.SetGold(GlodType.ob, 120, 5f);        
 		   }
@@ -133,20 +133,20 @@ public class WebScoketController : MonoBehaviour
           {
             result_num=result_num+1;
             TrackGenerator.instance.SetGold(GlodType.ob, 120, 5f);   
-		  }
+		   }
 
           if (msg == "03")
           {
             result_num=result_num+1;
             TrackGenerator.instance.SetGold(GlodType.ob, 120, 5f);   
-		  }
+		   }
 
          if (msg == "04"||msg == "05")
          {
             result_num=result_num+1;
             TrackGenerator.instance.SetGold(GlodType.Blue, tar_distance, 3f);
             TrackGenerator.instance.SetGold(GlodType.ob, 120, 5f);    
-		 }
+		  }
 
           if (msg == "06")
        {
@@ -469,6 +469,7 @@ public class WebScoketController : MonoBehaviour
                num_tar=TrackGenerator.instance.Set_tar();
                Debug.Log(num_tar*100);
                tar_times=0;
+               myboard.instance.level_clock=0;
                clock_tar=r.Next(0,2);
             }
             
@@ -507,6 +508,7 @@ public class WebScoketController : MonoBehaviour
                num_tar=TrackGenerator.instance.Set_tar();
                Debug.Log(num_tar*100);
                tar_times=0;
+               myboard.instance.level_clock=0;
                clock_tar=r.Next(0,2);
             }
 
@@ -601,7 +603,7 @@ public class WebScoketController : MonoBehaviour
          //     //     item.SetObstruct(-6.5f, 100f);
          //     // }
          // }
-        }
+      }
 
          //游戏难度五
     
@@ -626,6 +628,7 @@ public class WebScoketController : MonoBehaviour
                num_tar=TrackGenerator.instance.Set_tar();
                Debug.Log(num_tar*100);
                tar_times=0;
+               myboard.instance.level_clock=0;
                clock_tar=r.Next(0,2);
             }
 
@@ -663,6 +666,7 @@ public class WebScoketController : MonoBehaviour
                num_tar=TrackGenerator.instance.Set_tar();
                Debug.Log(num_tar*100);
                tar_times=0;
+               myboard.instance.level_clock=0;
                clock_tar=r.Next(0,2);
             }
             if (clock_tar==0)
